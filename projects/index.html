@@ -1,0 +1,10 @@
+---
+layout: 'index'
+---
+<div id = 'current_projects'>
+<h2>Projects</h2>
+{% capture my-include %}{% include projects.md %}{% endcapture %}
+{{ my-include | markdownify }}
+</div>
+
+
