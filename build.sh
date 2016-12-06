@@ -3,7 +3,7 @@
 
 bundle exec jekyll build
 DESTDIR=../lieuzhenghong.github.io/
-rm -rf $DESTDIR
-mkdir $DESTDIR 
+rm -rf ../lieuzhenghong.github.io/*
 mv -v ./_site/* $DESTDIR 
 rm -rf ./_site/
+rm -f $DESTDIR/build.sh
