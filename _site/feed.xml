@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/feed.xml" rel="self" type="application/atom+xml" /><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/" rel="alternate" type="text/html" /><updated>2016-12-27T14:12:56+08:00</updated><id>http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/</id><title type="html">lieu’s site</title><subtitle>my personal site</subtitle><author><name>lieuzhenghong</name></author><entry><title type="html">2016</title><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review.html" rel="alternate" type="text/html" title="2016" /><published>2016-12-27T00:00:00+08:00</published><updated>2016-12-27T00:00:00+08:00</updated><id>http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review</id><content type="html" xml:base="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review.html">&lt;p&gt;2016 has been a long year and it’s hard to keep track of all the things I’ve
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/feed.xml" rel="self" type="application/atom+xml" /><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/" rel="alternate" type="text/html" /><updated>2016-12-28T02:28:20+08:00</updated><id>http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/</id><title type="html">lieu’s site</title><subtitle>my personal site</subtitle><author><name>lieuzhenghong</name></author><entry><title type="html">2016</title><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review.html" rel="alternate" type="text/html" title="2016" /><published>2016-12-27T00:00:00+08:00</published><updated>2016-12-27T00:00:00+08:00</updated><id>http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review</id><content type="html" xml:base="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review.html">&lt;p&gt;2016 has been a long year and it’s hard to keep track of all the things I’ve
 done. I started this blog (I think it’s more of a diary really) for the express
 purpose of keeping track of what I have been doing.&lt;/p&gt;
 
@@ -29,7 +29,7 @@ this past year.&lt;/p&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;Apr&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Started this blog&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Started this blog, approached IDA&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;May&lt;/td&gt;
@@ -37,7 +37,7 @@ this past year.&lt;/p&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;Jun&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Ran a pilot course of Python Titans&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Ran a pilot course of Python Titans at IDA.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;Jul&lt;/td&gt;
@@ -61,15 +61,16 @@ this past year.&lt;/p&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;Dec&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Holiday with family&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Holiday with family, built Co{de}llective website&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h2 id=&quot;things-i-have-succeeded-at&quot;&gt;Things I have succeeded at&lt;/h2&gt;
 
+&lt;h3 id=&quot;gaining-programming-skill&quot;&gt;Gaining programming skill&lt;/h3&gt;
 &lt;p&gt;This year I’ve focused on improving my technical skill. I feel that I have
-learned a lot but there’s still &lt;em&gt;a lot&lt;/em&gt; to learn.&lt;/p&gt;
+learned a lot but there’s still a billion things to learn.&lt;/p&gt;
 
 &lt;p&gt;My focus this year has been on the Web and I don’t think that’s a bad thing &lt;em&gt;per se&lt;/em&gt;
 because the Web is so ubiquitous after all. However,
@@ -80,26 +81,236 @@ with the advent of excellent front-end frameworks like Bootstrap.&lt;/p&gt;
 &lt;p&gt;I still enjoy
 game and app development and am likely to continue pursuing it in the future but 
 after dipping my toes in CS50 I think I would like to explore the more technical/
-computer science aspect of development. That means machine learning/NN/AI instead
+computer science aspect of development. That means ML/NN/AI/compilers? instead
 of web development.&lt;/p&gt;
 
-&lt;p&gt;I will run through this year’s projects each in turn:&lt;/p&gt;
+&lt;p&gt;I will run through this year’s projects each in chronological order:&lt;/p&gt;
 
-&lt;h3 id=&quot;codegl-or-a-failed-shenzhen-io-knockoff&quot;&gt;CodeGL, or a failed Shenzhen I/O knockoff&lt;/h3&gt;
+&lt;h4 id=&quot;this-blog&quot;&gt;This blog&lt;/h4&gt;
 
-&lt;p&gt;Although this project has not been touched for more than a month, I feel comfortable
-putting&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What I learned:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Github Pages&lt;/li&gt;
+  &lt;li&gt;Jekyll,&lt;/li&gt;
+  &lt;li&gt;Buying a domain name&lt;/li&gt;
+  &lt;li&gt;Configuring DNS settings&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The first technical project of 2016. Building a website was not new to me but
+using frameworks and build tools to build a website was.&lt;/p&gt;
+
+&lt;p&gt;For the longest time my approach to building a site was to whack &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;
+and &lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt; files (have been doing it since Sec One), and they’ve never been
+hosted under a custom domain name.&lt;/p&gt;
+
+&lt;h4 id=&quot;automated-transaction-tracker&quot;&gt;Automated transaction tracker&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;What I learned:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Building a REST app&lt;/li&gt;
+  &lt;li&gt;React&lt;/li&gt;
+  &lt;li&gt;ExpressJS&lt;/li&gt;
+  &lt;li&gt;MongoDB and Mongoose&lt;/li&gt;
+  &lt;li&gt;Deploying on DigitalOcean&lt;/li&gt;
+  &lt;li&gt;The back-end, in general.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This was the largest project of 2016! It was an extremely ambitious and extremely
+tiring project. I had a &lt;em&gt;lot&lt;/em&gt; of trouble with it although now, looking back, it
+seems pretty trivial. (More on this phenomenon next time.)&lt;/p&gt;
+
+&lt;p&gt;Doing all the Express routers/routes was hard, the MongoDB database queries
+even harder, and the React UI hardest of all! It was this project that made me
+realise that back-end is actually not hard and much more fun than the front-end.
+This was a watershed moment as previously the back-end was something extremely
+mysterious and inaccessible to me; I remember in 2015 I had no idea what Dae Koon
+was doing when we were doing the Smart Gallery app.&lt;/p&gt;
+
+&lt;h4 id=&quot;charge-bot&quot;&gt;Charge Bot&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;What I learned:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Telegram Bot API&lt;/li&gt;
+  &lt;li&gt;Long polling&lt;/li&gt;
+  &lt;li&gt;More REST practice&lt;/li&gt;
+  &lt;li&gt;Deploying on Heroku&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I built this simple Telegram bot a couple months after the Bot API was released.
+The moment the Bot API was announced CKY and I immediately discussed building a 
+bot.&lt;/p&gt;
+
+&lt;p&gt;An extremely simple Telegram bot that took a deceptively long time to do. 
+I must admit that the concept
+of long polling gave me a lot of grief: I had initially implemented my long polling
+function recursively but that caused a stack overflow after some time. (Can you
+figure out how to write a long polling function in a non-recursive manner?)&lt;/p&gt;
+
+&lt;h4 id=&quot;codegl-or-a-failed-shenzhen-io-knockoff&quot;&gt;CodeGL, or a failed Shenzhen I/O knockoff&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;What I learned:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;C++&lt;/li&gt;
+  &lt;li&gt;SDL&lt;/li&gt;
+  &lt;li&gt;Minimal knowledge of how a CPU works&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Although this incomplete project has not been touched for more than a month, I 
+learned a lot from it. It was my first time writing C++ code and my first time doing anything
+graphics library related (I used SDL). I was quite happy to actually be writing a
+graphical application because I always had this impression that writing graphics
+stuff was incredibly difficult.&lt;/p&gt;
+
+&lt;p&gt;In fact, it would have been incredibly difficult had I not taken the CS50 course,
+which introduced me to C. Otherwise I’m sorry to say that the unfamiliar syntax
+would have scared me off (not to mention &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;cmake&lt;/code&gt;!)&lt;/p&gt;
 
 &lt;h2 id=&quot;things-i-have-failed-at&quot;&gt;Things I have failed at&lt;/h2&gt;
 
 &lt;h3 id=&quot;going-to-the-gym-consistently&quot;&gt;Going to the gym consistently&lt;/h3&gt;
-&lt;p&gt;### ACCA ###
-### Learning to swim ###
-### Learning to drive ###&lt;/p&gt;
+
+&lt;p&gt;I have made gains, but I could have made more had I been more disciplined and
+less lazy.&lt;/p&gt;
+
+&lt;p&gt;Am still looking into a routine for 2017.&lt;/p&gt;
+
+&lt;h3 id=&quot;acca&quot;&gt;ACCA&lt;/h3&gt;
+
+&lt;p&gt;I took a 500 dollar course with Marc and realised that 
+a) accountancy is not for
+me and 
+b) my interest and comparative advantage lies elsewhere.&lt;/p&gt;
+
+&lt;p&gt;Therefore, I have decided to abandon this track indefinitely.&lt;/p&gt;
+
+&lt;p&gt;However, Marc (or rather Marc’s dad) told me that an ACCA qualification is useful
+for going into finance into the future.&lt;/p&gt;
+
+&lt;h3 id=&quot;swimming-15km&quot;&gt;Swimming 1.5km&lt;/h3&gt;
+
+&lt;p&gt;After getting a couple of bad sunburns and falling sick I stopped swimming with
+Wei Liang. I can swim freestyle much more comfortably than I could before I started
+swimming this year but my stroke is still poor and there’s a long way to go.&lt;/p&gt;
+
+&lt;p&gt;I do not like swimming in public pools because they are crowded and gross.&lt;/p&gt;
+
+&lt;p&gt;Perhaps I will pick this up in the future as a hobby and to get tan but I don’t
+foresee swimming becoming a part of my life anytime soon.&lt;/p&gt;
+
+&lt;h3 id=&quot;learning-to-drive&quot;&gt;Learning to drive&lt;/h3&gt;
+
+&lt;p&gt;Did not learn to drive. I had better things to do.&lt;/p&gt;
+
+&lt;p&gt;I will definitely have to learn sooner or
+later… am thinking of learning it in May after my internship.&lt;/p&gt;
 
 &lt;h2 id=&quot;things-that-are-neither-here-nor-there&quot;&gt;Things that are neither here nor there&lt;/h2&gt;
 
-&lt;p&gt;This is&lt;/p&gt;</content><author><name>lieuzhenghong</name></author><category term="annual review" /><category term="progress report" /><category term="goal setting" /><summary type="html">2016 has been a long year and it’s hard to keep track of all the things I’ve
+&lt;h3 id=&quot;reading-50-books-in-a-year&quot;&gt;Reading 50 books in a year&lt;/h3&gt;
+
+&lt;p&gt;I have actually succeeded in this endeavour (47 books–close enough) but I am 
+parking this here as I do not feel
+that this was a good use of my time.&lt;/p&gt;
+
+&lt;p&gt;Don’t get me wrong – I love books – but I didn’t feel like I really got anything
+from them. Because&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;For skills like programming, reading books is not as useful
+as doing and reading articles/code examples online. There are of course excellent
+books like the Gang of Four’s 
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Design_Patterns&quot;&gt;Design Patterns&lt;/a&gt; or JS: The Good Parts
+but 
+these books are meant more as
+reference guides, so in what sense can you say to have “finished” them?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Low retention. Looking at the book list I kept for this entire year,
+I realise that I have forgotten most of the content of the books. I did not use 
+to have this problem because I would reread books again and again until I had 
+internalised completely the concepts of the books. But this year, in an effort to
+hit the completely arbitrary number 50 (and also because I like buying new books),
+I did not do this.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Is there anything that can be done to remedy this? I read that you are not 
+ supposed to read non-fiction books the same way you read fiction books – that
+ is, from cover to cover, page 1 to end. Instead you should selectively skim
+ the book for information and actively summarise/take notes while reading. I
+ did not do this and do not like doing this largely because it feels too much
+ like &lt;em&gt;work&lt;/em&gt; but I may have to give this method a try in the future. I did
+ make some attempt at taking down notes but they were largely perfunctory and
+ shit.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;teaching-at-ulu-pandan-stars&quot;&gt;Teaching at Ulu Pandan Stars&lt;/h3&gt;
+
+&lt;p&gt;Truth be told, I did not very much enjoy the front part of teaching where I was
+preparing them for the CodeXtreme hackathon. Many of the kids were simply not able
+to learn any substantial programming concepts. I became much happier and far more
+excited when I was able to pull out the four kids and try out my own curriculum.&lt;/p&gt;
+
+&lt;p&gt;The fact that we have a clear goal for the kids – prepping them for DSA – is 
+also extremely motivating. I am an extremely goal-oriented person and it helps me
+greatly in my week-to-week planning if I have something in the future to look 
+forward to.&lt;/p&gt;
+
+&lt;p&gt;I have filed this under “neither here nor there” because although the kids have 
+already learned a lot, I have not delivered results yet.&lt;/p&gt;
+
+&lt;h3 id=&quot;co-founding-codellective&quot;&gt;Co-founding Co{de}llective&lt;/h3&gt;
+
+&lt;p&gt;I will reserve judgement/comment on this as it’s too early to say anything about
+it right now.&lt;/p&gt;
+
+&lt;h2 id=&quot;areas-for-improvement&quot;&gt;Areas for improvement&lt;/h2&gt;
+
+&lt;p&gt;WIP&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I am happy with the way 2016 went. I have been productive and I have achieved the
+goals I care most about.&lt;/p&gt;
+
+&lt;p&gt;Also just as important is the fact that I have tried new things and quit them 
+when I realised that I did not care about them at all.&lt;/p&gt;
+
+&lt;p&gt;At the risk of this blog post sounding like an Oscar acceptance speech, I am
+extremely grateful to Mark, without whom all the aforementioned technical projects 
+would be impossible to complete. He has gotten me unstuck more times than I can count
+and possesses an incredible patience for putting up with my incessant questions.
+Also, for hosting me at his house many times.
+(The same goes for Wei Heng, minus the hosting me at his house part).&lt;/p&gt;
+
+&lt;p&gt;I am grateful to CKY for being my best friend and being the only person I can 
+bounce my silly game design/writing/business ideas off of. I also admire him greatly for
+being extremely prolific and driven in his field of game design and development
+and I hope that some of that productivity will rub off on me.&lt;/p&gt;
+
+&lt;p&gt;Ariel has helped me a lot as an enthusiastic and responsive sounding-board for
+my ideas. More than anyone else I have shared with her my ideas and concerns
+about the Co{de}llective and Python Titans projects and she has always given me
+good advice and honest feedback. She also spent two weekends of her time to 
+help me run the nerve-wracking pilot program at IDA (on extremely short notice,
+no less). I cannot thank her enough.&lt;/p&gt;
+
+&lt;p&gt;I have Ming Shi to thank for introducing me to Ulu Pandan Stars and Mrs Hauw and
+I owe him a meal. And speaking of Mrs Hauw, I must also be grateful to her for
+giving me so much free rein with the C4C P5 class and for giving me the opportunity
+to intern at her company.&lt;/p&gt;
+
+&lt;p&gt;I have thanked all these people for their contribution to my goals but I’d also
+like to point out that I enjoy their company greatly and am grateful for that, too.
+To that end, I’d like to thank all of my friends for being patient 
+with my flaws, honest with their feedback, and liberal with their company.&lt;/p&gt;
+
+&lt;p&gt;Here’s to 2017!&lt;/p&gt;</content><author><name>lieuzhenghong</name></author><category term="annual review" /><category term="progress report" /><summary type="html">2016 has been a long year and it’s hard to keep track of all the things I’ve
 done. I started this blog (I think it’s more of a diary really) for the express
 purpose of keeping track of what I have been doing.</summary></entry><entry><title type="html">2015</title><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/26/2015-in-review.html" rel="alternate" type="text/html" title="2015" /><published>2016-12-26T00:00:00+08:00</published><updated>2016-12-26T00:00:00+08:00</updated><id>http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/26/2015-in-review</id><content type="html" xml:base="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/26/2015-in-review.html">&lt;p&gt;&lt;strong&gt;I wrote this last year in a Google Doc before this blog existed. I think before
 I go about writing 2016’s Year in Review I should post this one, for completeness.&lt;/strong&gt;&lt;/p&gt;
