@@ -25,16 +25,6 @@
 <div class = 'two_column'>
 
 <div class = 'col_1'>
-<ul>
-    {% for post in site.posts %}
-    <li>
-      <span class = 'post_date'> {{post.date | date: "%-d %b %y"}}</span><br><a href = "{{post.url}}">{{post.title}}</a>
-    </li>
-    {% endfor %}
-</ul>
-</div>
-
-<div class = 'col_2'>
   <h1>{{ page.title }}</h1>
   <div class = "tags">
       <strong>tags:</strong>
@@ -45,5 +35,21 @@
   </div>
 {{ content }}
 </div>
+
+<div class = 'col_2'>
+  <h2> Post list </h2>
+<ul>
+    {% for post in site.posts %}
+    <li>
+      <!--
+      <span class = 'post_date'> {{post.date | date: "%-d %b %y"}}</span>
+      <br>
+      -->
+      <a href = "{{post.url}}">{{post.title}}</a>
+    </li>
+    {% endfor %}
+</ul>
+</div>
+
 
 </div>

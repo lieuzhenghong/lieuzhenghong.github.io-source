@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/feed.xml" rel="self" type="application/atom+xml" /><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/" rel="alternate" type="text/html" /><updated>2016-12-28T02:28:20+08:00</updated><id>http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/</id><title type="html">lieu’s site</title><subtitle>my personal site</subtitle><author><name>lieuzhenghong</name></author><entry><title type="html">2016</title><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review.html" rel="alternate" type="text/html" title="2016" /><published>2016-12-27T00:00:00+08:00</published><updated>2016-12-27T00:00:00+08:00</updated><id>http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review</id><content type="html" xml:base="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review.html">&lt;p&gt;2016 has been a long year and it’s hard to keep track of all the things I’ve
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/feed.xml" rel="self" type="application/atom+xml" /><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/" rel="alternate" type="text/html" /><updated>2016-12-28T15:05:00+08:00</updated><id>http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/</id><title type="html">lieu’s site</title><subtitle>my personal site</subtitle><author><name>lieuzhenghong</name></author><entry><title type="html">2016</title><link href="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review.html" rel="alternate" type="text/html" title="2016" /><published>2016-12-27T00:00:00+08:00</published><updated>2016-12-27T00:00:00+08:00</updated><id>http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review</id><content type="html" xml:base="http://github.com/pages/lieuzhenghong/lieuzhenghong.github.io-source/2016/12/27/2016-in-review.html">&lt;p&gt;2016 has been a long year and it’s hard to keep track of all the things I’ve
 done. I started this blog (I think it’s more of a diary really) for the express
 purpose of keeping track of what I have been doing.&lt;/p&gt;
 
@@ -17,15 +17,15 @@ this past year.&lt;/p&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;Jan&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;strong&gt;Did nothing of note&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;strong&gt;Nothing of note&lt;/strong&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;Feb&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;strong&gt;Did nothing of note&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;strong&gt;Nothing of note&lt;/strong&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;Mar&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;&lt;strong&gt;Did nothing of note&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;&lt;strong&gt;Nothing of note&lt;/strong&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: left&quot;&gt;Apr&lt;/td&gt;
@@ -74,7 +74,7 @@ learned a lot but there’s still a billion things to learn.&lt;/p&gt;
 
 &lt;p&gt;My focus this year has been on the Web and I don’t think that’s a bad thing &lt;em&gt;per se&lt;/em&gt;
 because the Web is so ubiquitous after all. However,
-but after taking CS50 and doing some C, I realise that it can be a lot of fun. I
+after taking CS50 and doing some C, I realise that it can be a lot of fun. I
 think I want to move away from building websites as it has become somewhat trivial
 with the advent of excellent front-end frameworks like Bootstrap.&lt;/p&gt;
 
@@ -87,6 +87,10 @@ of web development.&lt;/p&gt;
 &lt;p&gt;I will run through this year’s projects each in chronological order:&lt;/p&gt;
 
 &lt;h4 id=&quot;this-blog&quot;&gt;This blog&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;What it is&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Self-explanatory&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;What I learned:&lt;/strong&gt;&lt;/p&gt;
 
@@ -106,6 +110,14 @@ hosted under a custom domain name.&lt;/p&gt;
 
 &lt;h4 id=&quot;automated-transaction-tracker&quot;&gt;Automated transaction tracker&lt;/h4&gt;
 
+&lt;p&gt;&lt;strong&gt;What it is&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;An app built during NS for WITS made to solve the problem of overdue
+loans. It is basically a digital 12-11 record/digital loan book that
+tracks who made what loans and sends SMS messages to them.&lt;/p&gt;
+
+&lt;p&gt;It&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;What I learned:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
@@ -114,7 +126,11 @@ hosted under a custom domain name.&lt;/p&gt;
   &lt;li&gt;ExpressJS&lt;/li&gt;
   &lt;li&gt;MongoDB and Mongoose&lt;/li&gt;
   &lt;li&gt;Deploying on DigitalOcean&lt;/li&gt;
-  &lt;li&gt;The back-end, in general.&lt;/li&gt;
+  &lt;li&gt;Twilio API and how to send SMSes&lt;/li&gt;
+  &lt;li&gt;User authentication (token-based)&lt;/li&gt;
+  &lt;li&gt;JSON Web Tokens (JWT)&lt;/li&gt;
+  &lt;li&gt;Hashing and salting passwords&lt;/li&gt;
+  &lt;li&gt;General back-end concepts&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;This was the largest project of 2016! It was an extremely ambitious and extremely
@@ -281,7 +297,9 @@ goals I care most about.&lt;/p&gt;
 &lt;p&gt;Also just as important is the fact that I have tried new things and quit them 
 when I realised that I did not care about them at all.&lt;/p&gt;
 
-&lt;p&gt;At the risk of this blog post sounding like an Oscar acceptance speech, I am
+&lt;p&gt;At the risk of this blog post sounding like an Oscar acceptance speech:&lt;/p&gt;
+
+&lt;p&gt;I am
 extremely grateful to Mark, without whom all the aforementioned technical projects 
 would be impossible to complete. He has gotten me unstuck more times than I can count
 and possesses an incredible patience for putting up with my incessant questions.
