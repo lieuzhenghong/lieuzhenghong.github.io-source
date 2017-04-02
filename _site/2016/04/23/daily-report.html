@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+
+<link rel = 'stylesheet' href = '/stylesheets/syntax.css' />
+<link rel = 'stylesheet' href = '/stylesheets/base.css' />
+<link rel = 'stylesheet' href = '/stylesheets/post_nav.css' />
+
+
+
+<title>
+
+ daily report: my first post
+
+</title>
+
+
+
+<header>
+<h1>Lieu</h1>
+<p>Hello World
+<hr>
+</header>
+
+<nav>
+  <ul>
+    <li><a href = '/'>home</a></li>
+    <li><a href = '/about'>about me</a></li>
+    <li><a href = '/projects'>current projects</a></li>
+    <li><a href = '/blog'>blog</a></li>
+  </ul>
+</nav>
+<hr>
+<link rel = 'stylesheet' href = '/stylesheets/nav.css' />
+
+
+<div class = 'two_column'>
+
+<div class = 'col_1'>
+  <h1>daily report: my first post</h1>
+  <div class = "tags">
+      <strong>tags:</strong>
+       
+    </ul>
+  </div>
+<link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css" />
+
+<h2 id="daily-report-for-2016-04-23">daily report for 2016-04-23</h2>
+
+<p>Today I woke up at 1030 extremely tired. I slept at about 2am last night, having
+Mission-Impossible-d home (did not bring keys–went to the window and grabbed
+the window keys, then went to my room’s window and climbed in that way)</p>
+
+<p>I woke up at 1030 and started to use the computer all the way until 1530. (which
+is the time of this writing). Here’s what I did:</p>
+
+<ol>
+  <li>Learn how to regex (I learned it so I could do a regex to check for .html
+files in the request.url of node.js server).</li>
+  <li>Learned a little bit about the web OSI: wires -&gt; IP –&gt; TCP –&gt; HTTP</li>
+</ol>
+
+<p>I’m trying to get my node.js server a little bit more functional. Mark suggested
+that I extend it such that it handles nonstandard GET requests, that is:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">localhost</span><span class="o">/</span><span class="nx">add</span><span class="p">?</span><span class="nx">a</span><span class="o">=</span><span class="mi">5</span><span class="o">&amp;</span><span class="nx">b</span><span class="o">=</span><span class="mi">10</span>
+</code></pre>
+</div>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">show</span>
+    <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
+<p>The full quote was the following:</p>
+
+<blockquote>
+  <p>Mark Theng, [23.04.16 14:53]
+uhh, create an api?</p>
+</blockquote>
+
+<blockquote>
+  <p>Mark Theng, [23.04.16 14:53]
+if you can get something like localhost/add?a=5&amp;b=10 to work</p>
+</blockquote>
+
+<blockquote>
+  <p>Mark Theng, [23.04.16 14:54]
+then you can do your ajax client</p>
+</blockquote>
+
+<blockquote>
+  <p>Mark Theng, [23.04.16 14:54]
+then, if you’re feeling ambitious, you can install socket.io</p>
+</blockquote>
+
+<p><strong>Update 2016-04-23 17:20</strong></p>
+
+<p>Just managed to get localhost/add?a=5&amp;b=10 to work!</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">url</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="kc">true</span><span class="p">).</span><span class="nx">pathname</span>  <span class="o">===</span> <span class="s1">'/add'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="nx">url</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span><span class="kc">true</span><span class="p">).</span><span class="nx">query</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">acc</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">item</span> <span class="k">in</span> <span class="nx">str</span><span class="p">){</span>
+        <span class="nx">acc</span> <span class="o">+=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">str</span><span class="p">[</span><span class="nx">item</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="p">{</span><span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'text/html'</span><span class="p">});</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">'&lt;p&gt; The answer is: '</span> <span class="o">+</span> <span class="nx">acc</span><span class="p">);</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">();</span>
+ <span class="p">}</span>
+</code></pre>
+</div>
+<p><strong>Update 2016-04-23 18:25</strong></p>
+
+<p>Wow so shag. Took me the better part of an hour to figure out how to do syntax
+highlighting in Jekyll. I thought that it was automatic but turns out only
+Rouge, the engine, is automated–you still have to download the css file, of
+course. Stupid mistake to make, but I’m stupid.</p>
+
+
+</div>
+
+<div class = 'col_2'>
+  <h2> Post list </h2>
+<ul>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 31 Mar 17</span>
+      <br>
+      -->
+      <a href = "/2017/03/31/quarterly-report-2017.html">2017 Quarterly Report I</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 27 Dec 16</span>
+      <br>
+      -->
+      <a href = "/2016/12/27/2016-in-review.html">2016</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 26 Dec 16</span>
+      <br>
+      -->
+      <a href = "/2016/12/26/2015-in-review.html">2015</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 6 Dec 16</span>
+      <br>
+      -->
+      <a href = "/2016/12/06/ORD-lo.html">ORD lo</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 28 Oct 16</span>
+      <br>
+      -->
+      <a href = "/2016/10/28/october-in-review.html">October in review; plans for November</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 8 Oct 16</span>
+      <br>
+      -->
+      <a href = "/2016/10/08/an-eventful-saturday.html">An eventful Saturday</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 20 Sep 16</span>
+      <br>
+      -->
+      <a href = "/2016/09/20/building-my-first-telegram-bot.html">Building my first Telegram bot</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 5 Sep 16</span>
+      <br>
+      -->
+      <a href = "/2016/09/05/september.html">September</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 11 Aug 16</span>
+      <br>
+      -->
+      <a href = "/2016/08/11/daily-report.html">Long-overdue update</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 24 Jun 16</span>
+      <br>
+      -->
+      <a href = "/2016/06/24/brexit.html">On Brexit, and the unreasonable effectiveness of demagoguery</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 26 May 16</span>
+      <br>
+      -->
+      <a href = "/2016/05/26/daily-report.html">An update on my life so far</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 11 May 16</span>
+      <br>
+      -->
+      <a href = "/2016/05/11/daily-report.html">Meeting with iDA staff (Oscar, Kiranjit and Eric)</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 10 May 16</span>
+      <br>
+      -->
+      <a href = "/2016/05/10/daily-report.html">Meeting with Mrs Hauw, swimming with Xiao Hui and future plans</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 5 May 16</span>
+      <br>
+      -->
+      <a href = "/2016/05/05/daily-report.html">daily report: I talk about what I've done for the past two weeks</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 24 Apr 16</span>
+      <br>
+      -->
+      <a href = "/2016/04/24/daily-report.html">daily report</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 23 Apr 16</span>
+      <br>
+      -->
+      <a href = "/2016/04/23/daily-report.html">daily report: my first post</a>
+    </li>
+    
+</ul>
+</div>
+
+
+</div>
