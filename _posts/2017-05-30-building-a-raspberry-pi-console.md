@@ -29,17 +29,32 @@ event-based programming, and so on. We have also been training them to talk
 about what they have done (the girls lack the confidence to speak in a formal
 setting) but there's still a lot of work that still needs to be done.
 
+## Parts used ##
+
+* 7-inch touchscreen LCD: 118 SGD
+* Raspberry Pi 3: ~65 SGD
+* Rheostats, 2: ~2 SGD each
+* 60mm buttons, 2: 4.50 SGD each
+* 45mm buttons, 2: 3.50 SGD each
+* ADC, 3 (but we used only 1): ~7 SGD each
+* Box file from Popular: ~5 SGD
+* X-acto knife: 13 SGD
+* Solder iron: given to me by Snoopy
+
+Total cost: ~250 SGD
+
 ## First draft ##
 
 The project started as a 'shoebox console' but we found that a shoebox was way
 too flimsy. Here's what that looked like: 
-that instead. 
 
 ![image-title-here](/img/raspi-console/old_console_closeup.jpg)
+
 ![image-title-here](/img/raspi-console/old_console_closeup2.jpg)
 ![image-title-here](/img/raspi-console/old_console_students.jpg)
-
+Zhengyang with the students
 <video width='100%' src='/img/raspi-console/old_console_video' controls></video>
+Video of me pressing the buttons
 
 We used an X-acto knife to cut the holes in the box and had to solder wires
 onto the rheostats and the push buttons.
