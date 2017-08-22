@@ -11,6 +11,7 @@ Since my
 %}) I have done the following:
 
 * Went to Yunnan
+* Dabbled in 3D printing
 * Prepared the kids for CodeXtreme 2017
 * Turned 21
 * Matriculated at NTU
@@ -29,8 +30,8 @@ them for even letting me go on the trip with them in the first place.
 I loved the snow-capped mountain and the hike through Tiger Leaping Gorge: took
 a lot of pictures with Jian Kai's DSLR.
 
-![image-title-here](/img/yunnan/me.jpg)
 ![image-title-here](/img/yunnan/gorge.jpg)
+![image-title-here](/img/yunnan/me.jpg)
 ![image-title-here](/img/yunnan/snow-mountain.jpg)
 ![image-title-here](/img/yunnan/landscape.jpg) ![image-title-here](/img/yunnan/group-photo.jpg)
 ![image-title-here](/img/yunnan/group-photo-2.jpg)
@@ -47,20 +48,49 @@ well.
 
 All in all, a great trip—thanks to Sam and JK.
 
+## Dabbled in 3D printing ##
+Built a burr puzzle as a gift to Wei Heng to thank him for lending me his SUICA
+card and travel adapter for my Japan trip. 
+
+![burr puzzle pieces](/img/3d-printing/burr-puzzle-split.jpg)
+![burr puzzle pieces assembled](/img/3d-printing/burr-puzzle.jpg)
+
+The cube in cube was just for fun.
+
+![cube-in-cube-raw](/img/3d-printing/cube-in-cube-raw.jpg)
+![cube-in-cube-1](/img/3d-printing/cube-in-cube-.jpg)
+![cube-in-cube-2](/img/3d-printing/cube-in-cube-2.jpg)
+
 ## Prepared the kids for CodeXtreme 2017 ##
 The annual hackathon event. I took Audrey, Gillian and Gao Hong; Dylan was
 taken by Eng Chye. Got to know Van, a final year student at NUS SoC. She helped
 me greatly in the project. 
 
-We built a microI:bit "magic wallet" implementation, and also a little LEGO
+We built a micro:bit "magic wallet" implementation, and also a little LEGO
 umbrella dispenser. We demonstrated the ability to use the micro:bit to send
 and receive user-specified amounts of money.
 
+![''](/img/microbit-wallet/group-photo.jpg)
+![''](/img/microbit-wallet/group-photo2.jpg)
+*Looking glam in slippers*
+![''](/img/microbit-wallet/dylan-team.jpg)
 ![microbit-wallet-poster](/img/microbit-wallet/microbit-wallet-poster.jpg)
 
 My team took third place, and Eng Chye's team took first. Mrs Hauw was thrilled.
 
 ## Turned 21 ##
+I treated the gang to a buffet to celebrate. The food was pretty good but Nauxiy
+was so shag after his hall camp he could barely keep his eyes open.
+
+This is normally where I would write about trying to be more mature and
+quitting gaming and all sorts of things but this post is very very long and
+besides, every year I say the same things...
+
+![''](/img/2017-birthday/2017-birthday.jpg)
+
+Marc and I will be leaving for the UK and the rest will be staying in
+Singapore. I hope the six of us last long and all of us find happiness and
+success.
 
 ## Matriculated at NTU ##
 Nothing to say here
@@ -69,7 +99,12 @@ Nothing to say here
 Met new people 
 
 I really like the people in NTU; they are really genuine and down-to-earth. I
-participated in Banyan Hall camp
+participated in Banyan hall camp and SCSE's faculty orientation camp.
+
+![''](/img/ntu/ravenclaw.jpg)
+
+I really will miss my OG mates and I do sincerely hope that they'll want to
+keep in touch even after I go overseas to study....
 
 ## Withdrew from NTU ##
 Had to be done; I had fun.
@@ -92,17 +127,17 @@ I will reproduce what I wrote in May here:
   would be willing to cancel my trip to Yunnan if need be; nothing to do now but
   wait.
 
-First of:
+First off:
 Although MAS does not give feedback, I was extremely fortunate to have had Ms
 Nair who did:
 
-[image-title-here](img/ms-nair-feedback.jpg)
+![ms nair's feedback](/img/scholarship/ms-nair-feedback.jpg)
 
-The feedback is spot-on and is absolutely something that I need to work on. Ms
-Nair was also kind enough to lend me some books that will hopefully teach me
-not to behave like one's on the spectrum, including "The 5 Languages of
-Appreciation in the Workplace", "Emotional Intelligence 2.0", "The Rules of
-Management" and so on.
+The feedback is spot-on (I predicted as much back in May) and is absolutely
+something that I need to work on. Ms Nair was also kind enough to lend me some
+books that will hopefully teach me not to behave like one's on the spectrum,
+including "The 5 Languages of Appreciation in the Workplace", "Emotional
+Intelligence 2.0", "The Rules of Management" and so on.
 
 I was interviewed by the directors who asked me (among other things) whether I
 would be OK with taking PPE. The CEO also asked me, although childhood
@@ -113,7 +148,7 @@ subject. Instead it should be worked into maths, physics, chemistry, even
 literature lessons—learning Cartesian coordinates through programming a game,
 or learning about circuits through wiring up a Makey-Makey, or building a
 chatbot that replies only in quotes from Shakespeare's plays. I thought the
-interview went well, and I can only imagine that it did.
+interview went well, and I can only suppose that it did.
 
 It's curious that IMDA's entire interview process did not include an aptitude
 test. 
