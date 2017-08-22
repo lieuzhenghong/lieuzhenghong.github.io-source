@@ -1,0 +1,37 @@
+/* line 1, ../sass/post_nav.scss */
+.two_column {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 4, ../sass/post_nav.scss */
+.two_column > .col_1, .two_column .col_2 {
+  box-sizing: border-box;
+}
+/* line 7, ../sass/post_nav.scss */
+.two_column > .col_2 {
+  border-top: 1px solid #c8c8c8;
+}
+/* line 9, ../sass/post_nav.scss */
+.two_column > .col_2 > ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 16, ../sass/post_nav.scss */
+.two_column > .col_2 > ul li:nth-child(2n) {
+  background-color: #c8c8c8;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 26, ../sass/post_nav.scss */
+  .two_column > .col_1 {
+    width: 70%;
+    padding-right: 10px;
+    border-right: 1px solid #c8c8c8;
+  }
+  /* line 32, ../sass/post_nav.scss */
+  .two_column > .col_2 {
+    width: 30%;
+    border-top: none;
+    padding-left: 1rem;
+  }
+}

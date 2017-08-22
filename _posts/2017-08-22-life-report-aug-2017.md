@@ -30,10 +30,20 @@ them for even letting me go on the trip with them in the first place.
 I loved the snow-capped mountain and the hike through Tiger Leaping Gorge: took
 a lot of pictures with Jian Kai's DSLR.
 
-![image-title-here](/img/yunnan/gorge.jpg)
+### Yulong Snow Mountain
 ![image-title-here](/img/yunnan/me.jpg)
 ![image-title-here](/img/yunnan/snow-mountain.jpg)
-![image-title-here](/img/yunnan/landscape.jpg) ![image-title-here](/img/yunnan/group-photo.jpg)
+![image-title-here](/img/yunnan/landscape.jpg)
+
+### Tiger Leaping Gorge
+![image-title-here](/img/yunnan/landscape-3.jpg)
+![image-title-here](/img/yunnan/gorge.jpg)
+![image-title-here](/img/yunnan/landscape-4.jpg)
+![image-title-here](/img/yunnan/group-photo-3.jpg)
+
+### Other places
+![image-title-here](/img/yunnan/landscape-2.jpg)
+![image-title-here](/img/yunnan/me-2.jpg)
 ![image-title-here](/img/yunnan/group-photo-2.jpg)
 
 Thanks to Jeff, our Dali host, I was able to watch a master calligrapher at
