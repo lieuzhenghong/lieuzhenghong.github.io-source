@@ -14,16 +14,17 @@ Of course, this doesn't give me an excuse to drop goals that are hard!
 
 #### Academic goals ####
 
-1. Get a First in both collections at the start of HT 2018
+1. Get a First in both collections at the start of HT 2018 (40 hours)
   - Spend at least 40 hours revising for collections (10 hours * 4 weeks)
+  - Produce Economics and Logic notes; do at least 4 past-year papers on them
 
 2. Prepare for my modules in General Philosophy, Moral Philosophy and Practice
-   of Politics
-   - Do all the assigned reading (Mill, Lipjhart, Russell) and write notes for
+   of Politics (40 hours)
+   - Do all the assigned reading (Mill, Lipjhart, Russell) and write notes on
      them
    - Complete the assigned Philosophy and Politics essays for Week 1
 
-3. Continue my work in securing my CS fundamentals
+3. Continue my work in securing my CS fundamentals (40 hours)
   - Spend half an hour on Leetcode every day (road to 100 problems)
   - Finish N2T II!!!
   - Spend at least 30 hours per week on computer science self-study
@@ -32,11 +33,12 @@ Of course, this doesn't give me an excuse to drop goals that are hard!
 
 #### Career goals ####
 
-1. Apply for internship with IMDA and a tech firm
+1. Apply for internship with IMDA and a tech firm (20 hours)
+  - Polish up CV, write academic plan
 
 #### Non-academic goals ####
 
-1. Hit a 385kg/300 Wilks total at Varsity tryouts (HT 2018):
+1. Hit a 385kg/300 Wilks total at Varsity tryouts (HT 2018) (20 hours):
   - 105kg bench press
   - 135kg squat
   - 145kg deadlift
