@@ -4,9 +4,10 @@ html, body {
   background-color: #EEEEEE;
   line-height: 1.6;
   font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Crimson Text", serif;
 }
 
-/* line 9, ../sass/base.scss */
+/* line 10, ../sass/base.scss */
 body {
   max-width: 600px;
   margin: 0 auto;
@@ -14,92 +15,92 @@ body {
   padding-right: 20px;
 }
 @media screen and (min-width: 1000px) {
-  /* line 9, ../sass/base.scss */
+  /* line 10, ../sass/base.scss */
   body {
     max-width: 800px;
   }
 }
 
-/* line 20, ../sass/base.scss */
+/* line 21, ../sass/base.scss */
 li {
   line-height: 2em;
 }
 
-/* line 24, ../sass/base.scss */
+/* line 25, ../sass/base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 29, ../sass/base.scss */
+/* line 30, ../sass/base.scss */
 a:visited {
   color: #555;
 }
 
-/* line 33, ../sass/base.scss */
+/* line 34, ../sass/base.scss */
 blockquote {
   font-size: 80%;
 }
 
-/* line 39, ../sass/base.scss */
+/* line 40, ../sass/base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 43, ../sass/base.scss */
+/* line 44, ../sass/base.scss */
 img + em {
   font-size: 90%;
 }
 
-/* line 48, ../sass/base.scss */
+/* line 49, ../sass/base.scss */
 #blog li {
   margin-bottom: 1em;
   line-height: inherit;
   list-style: none;
 }
-/* line 53, ../sass/base.scss */
+/* line 54, ../sass/base.scss */
 #blog a {
   text-decoration: none;
 }
-/* line 56, ../sass/base.scss */
+/* line 57, ../sass/base.scss */
 #blog a:link {
   color: black;
 }
-/* line 59, ../sass/base.scss */
+/* line 60, ../sass/base.scss */
 #blog a:visited {
   color: #444;
 }
-/* line 62, ../sass/base.scss */
+/* line 63, ../sass/base.scss */
 #blog .post_date, #blog .tags {
   font-size: 80%;
 }
-/* line 65, ../sass/base.scss */
+/* line 66, ../sass/base.scss */
 #blog .tags {
   float: right;
 }
 
-/* line 71, ../sass/base.scss */
+/* line 72, ../sass/base.scss */
 h1 {
   font-size: 1.5em;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-/* line 76, ../sass/base.scss */
+/* line 77, ../sass/base.scss */
 h2 {
   font-size: 1.2em;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-/* line 81, ../sass/base.scss */
+/* line 82, ../sass/base.scss */
 h3 {
   font-weight: 300;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-/* line 87, ../sass/base.scss */
+/* line 88, ../sass/base.scss */
 header {
   text-align: center;
 }
-/* line 89, ../sass/base.scss */
+/* line 90, ../sass/base.scss */
 header h1 {
   font-size: 3em;
   line-height: 0.6em;

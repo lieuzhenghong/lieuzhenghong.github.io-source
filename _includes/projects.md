@@ -1,88 +1,98 @@
-It's interesting to see which goals I manage to complete and which goals are
-left by the wayside.
+# Projects
 
-I don't think there's anything inherently bad in setting goals and not
-finishing them. The most important thing is identifying the goals that are
-important and having the willpower to complete them, while paring ruthlessly
-the goals that *seem* worthwhile but do not advance my long-term interests.
+(This page is a work in progress)
+I've built several pieces of software.
 
-Of course, this doesn't give me an excuse to drop goals that are hard!
+## Blockchain industry showcase
+June 2018 -- present (ongoing)
 
-<hr>
+Actually four different components:
 
-### Goals and projects: 4 December 2017 ###
+1. Blockchain (powered by Hyperledger)
+2. Real-time blockchain visualisation
+3. Asset tracker (good viewer)
+4. Model train diorama with IoT sensors (to showcase the system in action)
 
-#### Academic goals ####
+Built with Hyperledger, Node.js, HTML Canvas.
 
-1. Get a First in both collections at the start of HT 2018 (40 hours)
-  - Spend at least 40 hours revising for collections (10 hours * 4 weeks)
-  - Produce Economics and Logic notes; do at least 4 past-year papers on them
+## Inspector's Gadget
+August 2017
 
-2. Prepare for my modules in General Philosophy, Moral Philosophy and Practice
-   of Politics (40 hours)
-   - Do all the assigned reading (Mill, Lipjhart, Russell) and write notes on
-     them
-   - Complete the assigned Philosophy and Politics essays for Week 1
+A bespoke building inspection software.
 
-3. Continue my work in securing my CS fundamentals (40 hours)
-  - Spend half an hour on Leetcode every day (road to 100 problems)
-  - Finish N2T II!!!
-  - Spend at least 30 hours per week on computer science self-study
-  - Do the Linear Algebra course (with Oskar); to be at least half done when I
-    return to Oxford
+Full GUI!!
 
-#### Career goals ####
+Built with Electron, Vue, HTML Canvas.
 
-1. Apply for internship with IMDA and a tech firm (20 hours)
-  - Polish up CV, write academic plan
+[GitHub](https://github.com/lieuzhenghong/inspectors-gadget/) 
 
-#### Non-academic goals ####
+## Form Emailer and Form Letterer
+April 2017
 
-1. Hit a 385kg/300 Wilks total at Varsity tryouts (HT 2018) (20 hours):
-  - 105kg bench press
-  - 135kg squat
-  - 145kg deadlift
-  - Go to the gym at least 10 times during the holiday period
+A mini "software suite" that makes sending mass, personalised emails very
+simple. I created it because I was too lazy to send emails manually when I was
+an intern.
 
-2. Take my driving test
-  - Go for at least 10 driving lessons
+Form Letterer allows you to quickly generate Word documents from a template,
+while Form Emailer lets you send personalised emails with different files
+attached. They synergise as you can use Form Letterer to generate unique
+documents and then send unique emails with Form Emailer.
 
-<hr>
+This project was borne out of the inadequacy of Outlook's Mail Merge. One of
+the "killer features" this software suite has is the ability to send unique
+attachments, which Outlook Mail Merge lacked. Another cool feature is it
+supports arbitrary Python code in substitutions, which allows for amazing
+features Mail Merge just can't support like conditional execution.
 
-### Goals set on 29 October 2016 ###
+Written in Python.
 
-#### Short-term goals (by end of Dec 2016) ####
+[Form Letterer](https://github.com/lieuzhenghong/form-letterer/) 
+[Form Emailer](https://github.com/lieuzhenghong/form-emailer/) 
 
-1. OHP 50kg 5x5 by the end of the year, work on my arms, abs, lats and traps;
-2. Swim 1.5km non-stop;
-3. Obtain my driving license.
+## Automated Transaction Tracker
+August 2016
 
-#### Long-term goals (by end of March 2017) ####
+This was built for the Army's Annual Innovation Contest.
 
-1. Obtain a scholarship from an organisation I enjoy;
-2. Get monthly sharing sessions up for Co{de}llective;
-3. Intern at a place and learn as much as I can;
-4. Continue learning as much as I can about programming:
-  - Arduino, C, smart home project;
-  - Machine learning (TensorFlow);
-  - Data analysis
+[GitHub](https://github.com/lieuzhenghong/automated-transaction-tracker/) 
 
-<hr>
+# Games
 
-### Goals set on May 2016 ###
+I've also built some silly games.
 
-1. Get the charity project I have in mind up and running;
-2. Obtain some sort of scholarship from an organisation I enjoy;
-3. Swim 1.5km non-stop;
-4. Learn as much as I can about programming:
-    - Be more familiar with Python3's syntax;
-    - Learn the terminal and Bash scripting;
-    - Learn vim;
-    - Learn technologies such as Node.js, websockets, **user auth**;
-5. Read at least fifty books by the end of the year, at least ten of which must
-   be textbooks;
-6. ~~Be able to bench press 65kg x 3 x 10 (reached Jul 2016) 100kg x 1
-   **or** 85kg x 5 by the end of the year;~~ (reached 26 October)
-7. Reach a body weight of ~~72kg~~ (reached Jul 2016) 75kg by the end of the year;
-8. Get at least ~~six~~ (unlikely—July 11) four ACCA papers done by the end of the year;
-9. Obtain my driving license.
+## Phonics Game
+July 2018
+
+An educational game for kids aged 7-8 to learn "vowel teams", made for the
+Ministry of Education. I didn't know what a vowel team was
+until I started this project.
+
+Built with HTML Canvas and JavaScript, with art from the (extremely) talented
+Shan Wei. Available to play [here](lieuzhenghong.com/phonics-game-poc).
+
+## Dropship Chess
+September 2017
+
+A game built for the the Jack computer, a computer we build ourselves from
+scratch (NAND gates) as part of the (excellent) course [From NAND to
+Tetris](https://www.nand2tetris.org/course).
+
+It's chess played on a 6x6 board where captured enemy pieces can be
+"airdropped" anywhere on the board in lieu of moving a piece, kind of like
+Shogi/Bughouse. White starts with two knights and Black with two bishops—so you
+have to capture the opponent's knights/bishops to get your own.
+
+Plugging the course here: NAND To Tetris is an excellent overview of computer
+architecture. You start with a NAND gate, and then build other gates from there
+like full adders. You then move on to building basic processing and storage
+devices (ALU, RAM and CPU).  Then you build an assembler, then a VM, then an
+interpreter, then a full-fledged parser/lexer and compiler, and finally an OS
+which you write in a high level language you compile yourself! It's awesome.
+
+Part I deals with the hardware and ends where you build an assembler. You then
+ascend up the software hierarchy until you write the OS for the computer. Part
+II was much more demanding than Part I, programmatically speaking. But at least
+I can say I wrote a compiler and OS, which gives me nerd cred.
+
+[Dropship Chess](https://github.com/lieuzhenghong/nand2tetris-dropship-chess) 
+[NAND 2 Tetris](https://github.com/lieuzhenghong/nand2tetris/)
