@@ -1,0 +1,26 @@
+.duo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.duo_1
+{
+  flex-basis: 100%;
+}
+
+.duo_2
+{
+
+}
+
+@media screen and (min-width: 600px)
+{
+  .duo
+  {
+  }
+  .duo_1
+  {
+    flex-basis: auto;
+    min-width: 300px;
+  }
+}

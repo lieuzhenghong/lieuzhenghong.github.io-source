@@ -15,6 +15,20 @@ Actually four different components:
 
 Built with Hyperledger, Node.js, HTML Canvas.
 
+
+
+<div class ="duo" markdown="1">
+
+<div class = "duo_1" markdown="1">
+
+![screenshot of inspector's gadget](/projects_img/inspectors_gadget.png)
+
+![screenshot of inspector's gadget](/img/chess/dropship-chess.jpg)
+
+</div>
+
+<div class = "duo_2" markdown ="1">
+
 ## Inspector's Gadget
 August 2017
 
@@ -25,6 +39,8 @@ Full GUI!!
 Built with Electron, Vue, HTML Canvas.
 
 [GitHub](https://github.com/lieuzhenghong/inspectors-gadget/) 
+</div>
+</div>
 
 ## Form Emailer and Form Letterer
 April 2017
@@ -36,13 +52,14 @@ an intern.
 Form Letterer allows you to quickly generate Word documents from a template,
 while Form Emailer lets you send personalised emails with different files
 attached. They synergise as you can use Form Letterer to generate unique
-documents and then send unique emails with Form Emailer.
+documents and then send those documents in personalised emails with Form Emailer.
 
 This project was borne out of the inadequacy of Outlook's Mail Merge. One of
 the "killer features" this software suite has is the ability to send unique
-attachments, which Outlook Mail Merge lacked. Another cool feature is it
-supports arbitrary Python code in substitutions, which allows for amazing
-features Mail Merge just can't support like conditional execution.
+attachments (a different attachment to each recipient), which Outlook Mail
+Merge lacked. Another cool feature is it supports arbitrary Python code in
+substitutions, which allows for amazing features Mail Merge just can't support
+like conditional execution.
 
 Written in Python.
 
@@ -70,6 +87,13 @@ until I started this project.
 Built with HTML Canvas and JavaScript, with art from the (extremely) talented
 Shan Wei. Available to play [here](lieuzhenghong.com/phonics-game-poc).
 
+<div class ="duo" markdown="1">
+
+<div class = "duo_1" markdown="1">
+![screenshot of dropship chess](/img/chess/dropship-chess.jpg)
+</div>
+
+<div class = "duo_2" markdown ="1">
 ## Dropship Chess
 September 2017
 
@@ -89,10 +113,9 @@ devices (ALU, RAM and CPU).  Then you build an assembler, then a VM, then an
 interpreter, then a full-fledged parser/lexer and compiler, and finally an OS
 which you write in a high level language you compile yourself! It's awesome.
 
-Part I deals with the hardware and ends where you build an assembler. You then
-ascend up the software hierarchy until you write the OS for the computer. Part
-II was much more demanding than Part I, programmatically speaking. But at least
-I can say I wrote a compiler and OS, which gives me nerd cred.
-
-[Dropship Chess](https://github.com/lieuzhenghong/nand2tetris-dropship-chess) 
+[Dropship Chess](https://github.com/lieuzhenghong/nand2tetris-dropship-chess),
 [NAND 2 Tetris](https://github.com/lieuzhenghong/nand2tetris/)
+
+</div>
+</div>
+

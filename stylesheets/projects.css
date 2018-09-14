@@ -1,0 +1,18 @@
+/* line 1, ../sass/projects.scss */
+.duo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 6, ../sass/projects.scss */
+.duo_1 {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 21, ../sass/projects.scss */
+  .duo_1 {
+    flex-basis: auto;
+    min-width: 300px;
+  }
+}
