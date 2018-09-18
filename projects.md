@@ -9,9 +9,9 @@ I've built several pieces of software.
 <div class ="duo" markdown="1">
 
 <div class = "duo_1" markdown="1">
-
-![screenshot of inspector's gadget](/img/inspectors_gadget/inspectors_gadget_gif.gif)
-
+![screenshot of blockchain slides](/img/blockchain_project/blockchain_1.png)
+![screenshot of blockchain slides](/img/blockchain_project/blockchain_2.png)
+![screenshot of blockchain slides](/img/blockchain_project/blockchain_3.png)
 </div>
 
 <div class = "duo_2" markdown ="1">
