@@ -2,6 +2,8 @@
 layout: 'index'
 ---
 
+<link rel='stylesheet' href='/stylesheets/projects.css' />
+
 # Projects
 (This page is a work in progress)
 I've built several pieces of software.
