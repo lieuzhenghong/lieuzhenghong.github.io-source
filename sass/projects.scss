@@ -3,23 +3,18 @@
   flex-wrap: wrap;
 }
 
-.duo_1
-{
+.duo_1 {
   flex-basis: 100%;
 }
 
-.duo_2
-{
+.duo_2 {}
 
-}
-
-@media screen and (min-width: 600px)
-{
-  .duo
-  {
+@media screen and (min-width: 600px) {
+  .duo {
+    flex-wrap: nowrap;
   }
-  .duo_1
-  {
+
+  .duo_1 {
     flex-basis: auto;
     min-width: 300px;
   }

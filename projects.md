@@ -2,11 +2,19 @@
 layout: 'index'
 ---
 
-<link rel='stylesheet' href='/stylesheets/projects.css' />
-
 # Projects
 (This page is a work in progress)
 I've built several pieces of software.
+
+<div class ="duo" markdown="1">
+
+<div class = "duo_1" markdown="1">
+
+![screenshot of inspector's gadget](/img/inspectors_gadget/inspectors_gadget_gif.gif)
+
+</div>
+
+<div class = "duo_2" markdown ="1">
 
 ## Blockchain industry showcase
 June 2018 -- present (ongoing)
@@ -19,6 +27,8 @@ Actually four different components:
 4. Model train diorama with IoT sensors (to showcase the system in action)
 
 Built with Hyperledger, Node.js, HTML Canvas.
+</div>
+</div>
 
 <div class ="duo" markdown="1">
 
@@ -55,11 +65,18 @@ report generation.
 </div>
 </div>
 
+<div class ="duo" markdown="1">
+
+<div class = "duo_1" markdown="1">
+![screenshot of form emailer](/img/form_suite/form_emailer.png)
+![screenshot of form letterer](/img/form_suite/form_letterer.png)
+</div>
+
+<div class = "duo_2" markdown ="1">
+
 ## Form Emailer and Form Letterer
 April 2017
 
-![screenshot of form emailer](/img/form_suite/form_emailer.png)
-![screenshot of form letterer](/img/form_suite/form_letterer.png)
 
 A mini "software suite" that makes sending mass, personalised emails very
 simple. I created it because I was too lazy to send emails manually when I was
@@ -81,6 +98,8 @@ Written in Python.
 
 [Form Letterer](https://github.com/lieuzhenghong/form-letterer/) 
 [Form Emailer](https://github.com/lieuzhenghong/form-emailer/) 
+</div>
+</div>
 
 <div class ="duo" markdown="1">
 

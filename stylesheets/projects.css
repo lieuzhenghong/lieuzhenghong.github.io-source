@@ -9,8 +9,13 @@
   flex-basis: 100%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
+
   /* line 21, ../sass/projects.scss */
+  .duo {
+    flex-wrap: nowrap;
+  }
+
   .duo_1 {
     flex-basis: auto;
     min-width: 300px;
