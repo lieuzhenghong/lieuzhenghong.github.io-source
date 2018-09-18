@@ -16,6 +16,10 @@
 
   .duo_1 {
     flex-basis: auto;
-    min-width: 300px;
+    min-width: 600px;
+  }
+
+  .duo_1>img {
+    max-width: 550px;
   }
 }

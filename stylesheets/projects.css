@@ -20,4 +20,8 @@
     flex-basis: auto;
     min-width: 300px;
   }
+
+  .duo_1>img {
+    max-width: 550px;
+  }
 }
