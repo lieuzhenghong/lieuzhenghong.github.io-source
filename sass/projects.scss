@@ -1,3 +1,7 @@
+body {
+  max-width: 1200px !important;
+}
+
 /* line 1, ../sass/projects.scss */
 .duo {
   display: flex;
@@ -15,11 +19,13 @@
 
   .duo_1 {
     flex-basis: auto;
-    min-width: 600px;
+    min-width: 50%;
+    flex: 50%;
   }
 
-  .duo_1>img {
-    margin: 0 auto;
-    max-width: 550px;
+  .duo_2 {
+    min-width: 50%;
+    flex: 50%;
+    padding-left: 10px;
   }
 }

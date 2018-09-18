@@ -50,9 +50,9 @@ show that it decreases the time taken to write a report by up to 85%.
 
 A building inspection report involves three things:
 
-    Photos taken of the building
-    Floor plan of the building
-    PDF report of all building defects and recommended actions taken (if any)
+* Photos taken of the building
+* Floor plan of the building
+* PDF report of all building defects and recommended actions taken (if any)
 
 A building inspection report is done as follows: the engineer walks around
 the building and takes photos of all structural features and defects (if
@@ -112,11 +112,13 @@ Written in Python.
 ## Automated Transaction Tracker
 August 2016
 
-This was the army's first item tracker and automatic SMS reminder system.
-It's written in React, Node.js, and uses MongoDB on the back end. The system
+This was the army's first item tracker and automatic SMS reminder system.  It's
+written in React, Node.js, and uses MongoDB on the back end. The system
 decreases administrative overhead by automatically keeping count of all items
 in the store (item tracker), and sending SMSes to remind borrowers who have
-borrowed items from the store but have not returned them in time. The system will also automatically notify the supervisor of the store so that appropriate disciplinary action can be taken.
+borrowed items from the store but have not returned them in time. The system
+will also automatically notify the supervisor of the store so that appropriate
+disciplinary action can be taken.
 
 This system won second prize in the Army's Annual Innovation Contest.
 
