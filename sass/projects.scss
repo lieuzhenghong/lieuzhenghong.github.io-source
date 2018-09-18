@@ -1,3 +1,4 @@
+/* line 1, ../sass/projects.scss */
 .duo {
   display: flex;
   flex-wrap: wrap;
@@ -7,9 +8,7 @@
   flex-basis: 100%;
 }
 
-.duo_2 {}
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .duo {
     flex-wrap: nowrap;
   }
@@ -20,6 +19,7 @@
   }
 
   .duo_1>img {
+    margin: 0 auto;
     max-width: 550px;
   }
 }
