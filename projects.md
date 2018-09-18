@@ -22,7 +22,7 @@ Built with Hyperledger, Node.js, HTML Canvas.
 
 <div class = "duo_1" markdown="1">
 
-![screenshot of inspector's gadget](/img/inspectors_gadget/inspectors_gadget.png)
+![screenshot of inspector's gadget](/img/inspectors_gadget/inspectors_gadget_gif.gif)
 
 </div>
 
@@ -31,11 +31,23 @@ Built with Hyperledger, Node.js, HTML Canvas.
 ## Inspector's Gadget
 August 2017
 
-A bespoke building inspection software.
+Inspector's Gadget is a bespoke desktop application written in ElectronJS
+that was custom-built for a civil engineering consulting firm. It streamlines
+the process of writing building inspection reports. Real-world usage reports
+show that it decreases the time taken to write a report by up to 85%.
 
-Full GUI!!
+A building inspection report involves three things:
 
-Built with Electron, Vue, HTML Canvas.
+    Photos taken of the building
+    Floor plan of the building
+    PDF report of all building defects and recommended actions taken (if any)
+
+A building inspection report is done as follows: the engineer walks around
+the building and takes photos of all structural features and defects (if
+any). The engineer will then annotate the floor plan, showing where the
+defects are in the building. This software streamlines every part of the
+process, from quick-tagging floor plans, automatic table generation and final
+report generation.
 
 [GitHub](https://github.com/lieuzhenghong/inspectors-gadget/) 
 </div>
@@ -43,6 +55,9 @@ Built with Electron, Vue, HTML Canvas.
 
 ## Form Emailer and Form Letterer
 April 2017
+
+![screenshot of form emailer](/img/form_suite/form_emailer.png)
+![screenshot of form letterer](/img/form_suite/form_letterer.png)
 
 A mini "software suite" that makes sending mass, personalised emails very
 simple. I created it because I was too lazy to send emails manually when I was
@@ -68,7 +83,15 @@ Written in Python.
 ## Automated Transaction Tracker
 August 2016
 
-This was built for the Army's Annual Innovation Contest.
+This was the army's first item tracker and automatic SMS reminder system.
+It's written in React, Node.js, and uses MongoDB on the back end. The system
+decreases administrative overhead by automatically keeping count of all items
+in the store (item tracker), and sending SMSes to remind borrowers who have
+borrowed items from the store but have not returned them in time. The system will also automatically notify the supervisor of the store so that appropriate disciplinary action can be taken.
+
+![screencap of automated transaction tracker](/img/automated_transaction_tracker/automated_transaction_tracker.gif)
+
+This system won second prize in the Army's Annual Innovation Contest.
 
 [GitHub](https://github.com/lieuzhenghong/automated-transaction-tracker/) 
 
@@ -76,6 +99,13 @@ This was built for the Army's Annual Innovation Contest.
 
 I've also built some silly games.
 
+<div class ="duo" markdown="1">
+
+<div class = "duo_1" markdown="1">
+![screenshot of phonics game](/img/phonics_game/phonics_game.png)
+</div>
+
+<div class = "duo_2" markdown ="1">
 ## Phonics Game
 July 2018
 
@@ -85,6 +115,9 @@ until I started this project.
 
 Built with HTML Canvas and JavaScript, with art from the (extremely) talented
 Shan Wei. Available to play [here](lieuzhenghong.com/phonics-game-poc).
+
+</div>
+</div>
 
 <div class ="duo" markdown="1">
 
