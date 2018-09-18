@@ -19,12 +19,20 @@ I've built several pieces of software.
 ## Blockchain industry showcase
 June 2018 -- present (ongoing)
 
-Actually four different components:
+Tech stack: Hyperledger Fabric/Composer, Node.js, JavaScript
+
+Headed a project that persuades industry leaders to adopt blockchain in their
+companies, after obtaining buy-in from senior management...
+
+This is a fully-automated blockchain solution for supply chain
+management with four different components:
 
 1. Blockchain (powered by Hyperledger)
 2. Real-time blockchain visualisation
 3. Asset tracker (good viewer)
 4. Model train diorama with IoT sensors (to showcase the system in action)
+
+The way it works is ...
 
 Built with Hyperledger, Node.js, HTML Canvas.
 </div>

@@ -32,6 +32,6 @@ body {
   .duo_2 {
     min-width: 50%;
     flex: 50%;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }
