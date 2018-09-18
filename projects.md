@@ -1,5 +1,8 @@
-# Projects
+---
+layout: 'index'
+---
 
+# Projects
 (This page is a work in progress)
 I've built several pieces of software.
 
@@ -15,15 +18,11 @@ Actually four different components:
 
 Built with Hyperledger, Node.js, HTML Canvas.
 
-
-
 <div class ="duo" markdown="1">
 
 <div class = "duo_1" markdown="1">
 
-![screenshot of inspector's gadget](/projects_img/inspectors_gadget.png)
-
-![screenshot of inspector's gadget](/img/chess/dropship-chess.jpg)
+![screenshot of inspector's gadget](/img/inspectors_gadget/inspectors_gadget.png)
 
 </div>
 
