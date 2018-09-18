@@ -80,6 +80,14 @@ Written in Python.
 [Form Letterer](https://github.com/lieuzhenghong/form-letterer/) 
 [Form Emailer](https://github.com/lieuzhenghong/form-emailer/) 
 
+<div class ="duo" markdown="1">
+
+<div class = "duo_1" markdown="1">
+![screencap of automated transaction tracker](/img/automated_transaction_tracker/automated_transaction_tracker.gif)
+</div>
+
+<div class = "duo_2" markdown ="1">
+
 ## Automated Transaction Tracker
 August 2016
 
@@ -89,11 +97,11 @@ decreases administrative overhead by automatically keeping count of all items
 in the store (item tracker), and sending SMSes to remind borrowers who have
 borrowed items from the store but have not returned them in time. The system will also automatically notify the supervisor of the store so that appropriate disciplinary action can be taken.
 
-![screencap of automated transaction tracker](/img/automated_transaction_tracker/automated_transaction_tracker.gif)
-
 This system won second prize in the Army's Annual Innovation Contest.
 
 [GitHub](https://github.com/lieuzhenghong/automated-transaction-tracker/) 
+</div>
+</div>
 
 # Games
 
