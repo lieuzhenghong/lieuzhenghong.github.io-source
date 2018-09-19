@@ -21,8 +21,8 @@ June 2018 -- present (ongoing)
 
 Tech stack: Hyperledger Fabric/Composer, Node.js, JavaScript
 
-I headed a project that persuades industry leaders to adopt blockchain in their
-companies, after obtaining buy-in from senior management. I developed
+I am heading a project that persuades industry leaders to adopt blockchain in their
+companies, after obtaining buy-in from senior management. I am developing
 a fully-automated blockchain solution for supply chain management.
 
 The project is meant to showcase how blockchain technology can be adopted in
@@ -52,7 +52,8 @@ Built with Hyperledger, Node.js, and HTML Canvas.
 
 <div class = "duo_1" markdown="1">
 
-![screenshot of inspector's gadget](/img/inspectors_gadget/inspectors_gadget_gif.gif)
+<img src="/img/inspectors_gadget/inspectors_gadget_gif.gif" width="600px">
+![example report](/img/inspectors_gadget/report.png)
 
 </div>
 
@@ -72,12 +73,28 @@ A building inspection report involves three things:
 * Floor plan of the building
 * PDF report of all building defects and recommended actions taken (if any)
 
-A building inspection report is done as follows: the engineer walks around
+A building inspection report is done as follows: An engineer walks around
 the building and takes photos of all structural features and defects (if
-any). The engineer will then annotate the floor plan, showing where the
-defects are in the building. This software streamlines every part of the
-process, from quick-tagging floor plans, automatic table generation and final
-report generation.
+any). The engineer will then "tag" the floor plan---put labels on the floor
+plan to show where each photo was taken. Finally, the engineer will produce
+a PDF report which includes all the photos taken, a description of each photo,
+and a classification of the defect type.
+
+Before I created this application for the firm, creating a report was a very
+time-consuming process. First, every photo taken was renamed in File Explorer.
+Then, the floor plan was tagged in Microsoft Word by manually creating Text
+Boxes and moving them to the desired spot. Finally, to generate the report, the
+engineers would paste the images one by one into the Word document.  God forbid
+the engineer missed out one photo in the middle, as to insert the new photo
+_all_ subsequent photos had to be cut-and-pasted one box down. (You can see an
+example in the image: the image A2-30 has been left out. That means all the
+images and text from A2-31 onwards have to be cut and pasted one box down to
+make space for the new image.)
+
+This application streamlines every part of the process, from uploading images
+to quick-tagging floor plans to the final report generation. Just click an area
+of the floor plan to tag it. The report is generated automatically, and if you
+missed out a photo, that's fine---the report will reflow seamlessly.
 
 [GitHub](https://github.com/lieuzhenghong/inspectors-gadget/) 
 </div>
@@ -95,27 +112,25 @@ report generation.
 ## Form Emailer and Form Letterer
 April 2017
 
-
 A mini "software suite" that makes sending mass, personalised emails very
 simple. I created it because I was too lazy to send emails manually when I was
-an intern.
+an intern. It was written in Python with the help of
+[python-docx](https://python-docx.readthedocs.io/en/latest/).
 
 Form Letterer allows you to quickly generate Word documents from a template,
-while Form Emailer lets you send personalised emails with different files
-attached. They synergise as you can use Form Letterer to generate unique
-documents and then send those documents in personalised emails with Form Emailer.
+(e.g. documents with different names/dates/amounts), while Form Emailer lets
+you send personalised emails with different files attached. They synergise as
+you can use Form Letterer to generate unique documents and then send those
+documents in personalised emails with Form Emailer. 
 
-This project was borne out of the inadequacy of Outlook's Mail Merge. One of
-the "killer features" this software suite has is the ability to send unique
-attachments (a different attachment to each recipient), which Outlook Mail
-Merge lacked. Another cool feature is it supports arbitrary Python code in
-substitutions, which allows for amazing features Mail Merge just can't support
+One of the "killer features" this software suite has is the ability to send
+unique attachments (a different attachment to each recipient), which Outlook
+Mail Merge lacked. Another cool feature is it supports arbitrary Python code in
+substitutions, which allows for amazing substitutions Mail Merge just can't support
 like conditional execution.
 
-Written in Python.
-
-[Form Letterer](https://github.com/lieuzhenghong/form-letterer/) 
-[Form Emailer](https://github.com/lieuzhenghong/form-emailer/) 
+[Form Letterer GitHub](https://github.com/lieuzhenghong/form-letterer/)  
+[Form Emailer GitHub](https://github.com/lieuzhenghong/form-emailer/) 
 </div>
 </div>
 
@@ -187,12 +202,14 @@ It's chess played on a 6x6 board where captured enemy pieces can be
 Shogi/Bughouse. White starts with two knights and Black with two bishops—so you
 have to capture the opponent's knights/bishops to get your own.
 
-Plugging the course here: NAND To Tetris is an excellent overview of computer
-architecture. You start with a NAND gate, and then build other gates from there
-like full adders. You then move on to building basic processing and storage
-devices (ALU, RAM and CPU).  Then you build an assembler, then a VM, then an
-interpreter, then a full-fledged parser/lexer and compiler, and finally an OS
-which you write in a high level language you compile yourself! It's awesome.
+NAND To Tetris is an excellent overview of computer architecture. You start
+with a NAND gate and build full adders and mutliplexers from it. You then build
+basic processing and storage devices (ALU, RAM , CPU, display). Then you build an
+assembler, then a VM, then an interpreter, then a full-fledged parser/lexer and
+compiler for a high level language called Jack, and finally you write the OS
+for the computer in Jack! At the end of the course you've built a computer
+which supports a high-level language and can run a highly nontrivial
+program (Tetris) starting only from NAND gates. Awesome!
 
 [Dropship Chess](https://github.com/lieuzhenghong/nand2tetris-dropship-chess),
 [NAND 2 Tetris](https://github.com/lieuzhenghong/nand2tetris/)
