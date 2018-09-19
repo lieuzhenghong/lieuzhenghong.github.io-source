@@ -1,5 +1,5 @@
 ---
-layout: 'index'
+layout: 'projects'
 ---
 
 # Projects
@@ -9,9 +9,9 @@ I've built several pieces of software.
 <div class ="duo" markdown="1">
 
 <div class = "duo_1" markdown="1">
+![screenshot of blockchain slides](/img/blockchain_project/blockchain_3.png)
 ![screenshot of blockchain slides](/img/blockchain_project/blockchain_1.png)
 ![screenshot of blockchain slides](/img/blockchain_project/blockchain_2.png)
-![screenshot of blockchain slides](/img/blockchain_project/blockchain_3.png)
 </div>
 
 <div class = "duo_2" markdown ="1">
@@ -21,20 +21,30 @@ June 2018 -- present (ongoing)
 
 Tech stack: Hyperledger Fabric/Composer, Node.js, JavaScript
 
-Headed a project that persuades industry leaders to adopt blockchain in their
-companies, after obtaining buy-in from senior management...
+I headed a project that persuades industry leaders to adopt blockchain in their
+companies, after obtaining buy-in from senior management. I developed
+a fully-automated blockchain solution for supply chain management.
 
-This is a fully-automated blockchain solution for supply chain
-management with four different components:
+The project is meant to showcase how blockchain technology can be adopted in
+the supply chain. To this end, I've built an automated train diorama, and three
+other components:
 
-1. Blockchain (powered by Hyperledger)
-2. Real-time blockchain visualisation
-3. Asset tracker (good viewer)
-4. Model train diorama with IoT sensors (to showcase the system in action)
+1. Model train diorama with IoT sensors (to showcase the system in action)
+2. Blockchain (powered by Hyperledger)
+3. Real-time blockchain visualisation
+4. Asset tracker (good viewer) that works on any mobile device
 
-The way it works is ...
+Here's how it works. On the train are shipping containers with QR codes pasted
+on them. Scanning each QR code will pull up the asset tracker, a webpage that
+gives the real-time location and previous provenance of the good --- all stored
+immutably on the blockchain. As the train pulls up to a station, the goods are
+unloaded and sent to a different location (absent a robotic arm, I'm afraid one
+has to use his imagination for this). When this happens, each shipping
+container will update its location automatically, and this is stored, once
+again, on the blockchain. I've also built a blockchain visualisation
+so we can see new blocks being added in real-time.
 
-Built with Hyperledger, Node.js, HTML Canvas.
+Built with Hyperledger, Node.js, and HTML Canvas.
 </div>
 </div>
 
