@@ -1,0 +1,96 @@
+
+html, body {
+  font-size: 16px 100%;
+  background-color: #EEEEEE;
+  line-height: 1.6;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Crimson Text", serif;
+}
+
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 1000px) {
+   max-width: 800px;
+  }
+}
+
+li {
+  line-height: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+}
+a:visited {
+  color: #555;
+}
+
+blockquote {
+  font-size: 80%;
+}
+
+
+
+img {
+  max-width: 100%;
+}
+
+img + em { //For image caption styling. Since markdown has no caption
+  font-size: 90%;
+}
+
+#blog { //For the blog page
+  li {
+    margin-bottom: 1em;
+    line-height: inherit; //becomes 1.6em
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:link{
+    color: black;
+  }
+  a:visited {
+    color: #444;
+  }
+  .post_date, .tags {
+    font-size: 80%;
+  }
+  .tags {
+    float: right;
+  }
+}
+
+
+h1 {
+  font-size: 1.5em;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+h2 {
+  font-size: 1.2em;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+h3 {
+  font-weight: 300;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+
+header {
+  text-align: center;
+  h1 {
+    font-size: 3em;
+    line-height: 0.6em;
+  }
+}
+
+

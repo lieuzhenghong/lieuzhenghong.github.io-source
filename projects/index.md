@@ -9,6 +9,11 @@ I've built several pieces of software.
 <div class ="duo" markdown="1">
 
 <div class = "duo_1" markdown="1">
+![](/img/blockchain_project/final_product.jpg)
+![](/img/blockchain_project/detail_2.jpg)
+![](/img/blockchain_project/detail_3.jpg)
+![](/img/blockchain_project/detail_4.jpg)
+![](/img/blockchain_project/detail_5.jpg)
 ![screenshot of blockchain slides](/img/blockchain_project/blockchain_3.png)
 ![screenshot of blockchain slides](/img/blockchain_project/blockchain_1.png)
 ![screenshot of blockchain slides](/img/blockchain_project/blockchain_2.png)
@@ -16,16 +21,17 @@ I've built several pieces of software.
 
 <div class = "duo_2" markdown ="1">
 
-## Blockchain industry showcase
-June 2018 -- present (ongoing)
+## Blockchain train diorama (Blocktrain)
+
+June 2018 -- Aug 2018
 
 Tech stack: Hyperledger Fabric/Composer, Node.js, JavaScript
 
-I am heading a project that persuades industry leaders to adopt blockchain in their
-companies, after obtaining buy-in from senior management. I am developing
+I conceptualised and led a project that persuades industry leaders to adopt blockchain in their
+companies, after obtaining buy-in from senior management. I developed
 a fully-automated blockchain solution for supply chain management.
 
-The project is meant to showcase how blockchain technology can be adopted in
+The project showcases how blockchain technology can be adopted in
 the supply chain. To this end, I've built an automated train diorama, and three
 other components:
 
@@ -44,7 +50,10 @@ container will update its location automatically, and this is stored, once
 again, on the blockchain. I've also built a blockchain visualisation
 so we can see new blocks being added in real-time.
 
+I've written a more extensive writeup about the project [here](../2019/01/31/building-a-blocktrain.html), where I go into further detail.
+
 Built with Hyperledger, Node.js, and HTML Canvas.
+
 </div>
 </div>
 

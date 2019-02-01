@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+
+<link rel = 'stylesheet' href = '/stylesheets/syntax.css' />
+<link rel = 'stylesheet' href = '/stylesheets/base.css' />
+<link rel = 'stylesheet' href = '/stylesheets/post_nav.css' />
+
+
+
+<title>
+
+ Building an automated, blockchain-connected model train diorama
+
+</title>
+
+<header>
+<h1>劉</h1>
+<hr>
+</header>
+
+<nav>
+  <ul>
+    <li><a href='/'>home</a></li>
+    <li><a href='/projects'>projects</a></li>
+    <li><a href='/moocs'>MOOCs</a></li>
+    <li><a href='http://lieuzhenghong.com/resume'>resume</a></li>
+  </ul>
+</nav>
+<hr>
+<link rel='stylesheet' href='/stylesheets/nav.css' />
+
+
+<div class = 'two_column'>
+
+<div class = 'col_1'>
+  <h1>Building an automated, blockchain-connected model train diorama</h1>
+  <div class = "tags">
+      <strong>tags:</strong>
+      
+      <u><a href='/tag/programming.html'>programming</a></u>
+      
+      <u><a href='/tag/build.html'>build</a></u>
+      
+      <u><a href='/tag/making.html'>making</a></u>
+       
+    </ul>
+  </div>
+<p><strong>WIP</strong></p>
+
+<h1 id="introduction">Introduction</h1>
+<p><img src="/img/blockchain_project/final_product.jpg" alt="" /></p>
+
+<p>Over the summer of 2018 (June-Aug 2018), I built an automated, blockchain-connected model train diorama and an accompanying visualisation. The diorama shows how changes in the locations of goods can be added in real-time to the blockchain, ensuring an immutable and unforgeable chain of provenance. This exhibit is also <em>interactive</em>: members of the public can scan QR codes pasted on several shipping containers, and they’ll see that good’s location and history on their phones update in real time.</p>
+
+<h1 id="why-a-blocktrain">Why a blocktrain?</h1>
+
+<p>My boss was part of the group promoting industry adoption of blockchain. He wanted me to find some way to i) explain how the blockchain works, and ii) show how blockchain can be used in industry.</p>
+
+<p>I chose to showcase the supply chain, because this application is already being promoted by <a href="https://www.ibm.com/blockchain/industries/supply-chain">IBM</a> and it would have more relevance to the industry experts my boss talks to.</p>
+
+<p>My boss was enamoured with the idea of a moving train, having seen a model train set at the Accenture HQ. So I had the task of finding out how to use a model train set to showcase the supply chain. After several iterations, I decided on the current diorama + blockchain visualisation.</p>
+
+<h1 id="architecture">Architecture</h1>
+
+<p><img src="/img/blockchain_project/blockchain_1.png" alt="" />
+<img src="/img/blockchain_project/blockchain_2.png" alt="" />
+<img src="/img/blockchain_project/blockchain_3.png" alt="" />
+<img src="/img/blockchain_project/final_product_annotated.jpg" alt="" /></p>
+
+<p>There are four main components of this diorama:</p>
+
+<ol>
+  <li>Hyperledger Blockchain and REST API (running on a DigitalOcean instance)</li>
+  <li>Train diorama (controlled by a Raspberry Pi)</li>
+  <li>Blockchain visualisation (running on the Raspberry Pi)</li>
+  <li>Asset tracker (served by a DigitalOcean instance)</li>
+</ol>
+
+<video width="100%" controls="">
+<source src="/img/blockchain_project/in_action.MOV" />
+</video>
+
+<h1 id="blockchain-on-the-cloud">Blockchain on the cloud</h1>
+
+<p>I spun up a DigitalOcean instance to run the blockchain.</p>
+
+<p>Hyperledger Composer comes with its own REST API.</p>
+
+<h2 id="blockchain-visualisation">Blockchain visualisation</h2>
+
+<p>The blockchain visualisation is written from scratch in HTML5 Canvas, and runs on the Raspberry Pi. It polls the Hyperledger REST API to check for updates.</p>
+
+<p>I made a nice animation whereupon new blocks slide in, giving the diorama a sense of dynamism.</p>
+
+<h2 id="asset-tracker">Asset tracker</h2>
+
+<p>I wanted to make the diorama interactive so I created a</p>
+
+<p>People viewing the diorama can use their phones to scan the QR codes attached to several goods containers.</p>
+
+<h1 id="building-the-diorama">Building the diorama</h1>
+
+<h2 id="ideation">Ideation</h2>
+
+<p>I bought a $20 <em>Thomas the Train</em> model train set just to figure out how the diorama would work. You can see the video of it here:</p>
+
+<video width="100%" controls="">
+<source src="/img/blockchain_project/thomas_the_train.mp4" />
+</video>
+
+<h2 id="starting-and-stopping-the-train">Starting and stopping the train</h2>
+
+<p>This was the hardest part of the project.</p>
+
+<p>I first tried to use a weird German device called an <em>Aufenthaltsschalter</em> to stop and start the train automatically.</p>
+
+<p><img src="/img/blockchain_project/german_device.jpg" alt="" />
+The Aufenthaltsschalter*</p>
+
+<p><img src="/img/blockchain_project/jain_puzzled.jpg" alt="" />
+<em>Jain trying to figure out the device</em></p>
+
+<p><img src="/img/blockchain_project/crazy_german_manual.jpg" alt="" />
+<em>Complicated schematic</em></p>
+
+<p>Finally, <strong>Eureka moment</strong></p>
+
+<p>The program running on the Raspberry Pi is very simple. It constantly listens for a voltage change on any of the reed switches, and if there is, it toggles the reed switch, which stops the train (to simulate goods unloading/loading).</p>
+
+<p>It then makes a HTTP request to the Hyperledger blockchain REST API to update the locations of the goods on the train.</p>
+
+<p><img src="/img/blockchain_project/how_it_works.png" alt="Schematic of how the Raspberry Pi controls the train" /></p>
+
+<p>There were many possible approaches I considered: ultrasonic sensor, light sensor, etc</p>
+
+<p>Here’s a video of the train starting and stopping when toggling the reed switch.</p>
+
+<video width="100%" controls="">
+<source src="/img/blockchain_project/reed_switch.mp4" />
+</video>
+
+<h2 id="construction">Construction</h2>
+
+<p>I knew I wanted water in my diorama, as i) water looks very aesthetic, ii) I wanted to put a shipping container on the ship which people could scan, iii) Singapore is an island.</p>
+
+<p>To get a nice water effect, I used this thing called “Realistic Water”. We painted the styrofoam base a deep blue to get a “deep sea” effect, taped the sides to prevent water egress, then slowly poured the “Realistic Water” in, pressed in some rocks and finally left it to set overnight.</p>
+
+<p>It worked quite well, I think: see for yourself.</p>
+
+<p><img src="/img/blockchain_project/water_closeup.jpg" alt="Closeup of realistic water, before ship was added" /></p>
+
+<h1 id="glamour-shots">Glamour shots</h1>
+<p><img src="/img/blockchain_project/final_product.jpg" alt="" />
+<img src="/img/blockchain_project/detail_2.jpg" alt="" />
+<img src="/img/blockchain_project/detail_3.jpg" alt="" />
+<img src="/img/blockchain_project/detail_6.jpg" alt="" /></p>
+
+<p><img src="/img/blockchain_project/detail_4.jpg" alt="" />
+<img src="/img/blockchain_project/detail_5.jpg" alt="" /></p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>I greatly enjoyed this project.</p>
+
+<p>It was super fun to play with model trains and fix up the diorama.</p>
+
+<p>Learned a lot of new things:</p>
+
+<ul>
+  <li>Hyperledger</li>
+  <li>Reed switch, relay switch</li>
+  <li></li>
+</ul>
+
+
+</div>
+
+<div class = 'col_2'>
+  <h2> Post list </h2>
+<ul>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 31 Jan 19</span>
+      <br>
+      -->
+      <a href = "/2019/01/31/building-a-blocktrain.html">Building an automated, blockchain-connected model train diorama</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 1 Jan 19</span>
+      <br>
+      -->
+      <a href = "/2019/01/01/MT2018-report.html">MT 2018 report and plans for 2019</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 1 Jul 18</span>
+      <br>
+      -->
+      <a href = "/2018/07/01/2018-in-review.html">2018 in review</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 10 Mar 18</span>
+      <br>
+      -->
+      <a href = "/2018/03/10/2018-ht-report.html">Hilary 2018 report</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 5 Dec 17</span>
+      <br>
+      -->
+      <a href = "/2017/12/05/life-report-dec-2017.html">Michaelmas 2017 report</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 24 Sep 17</span>
+      <br>
+      -->
+      <a href = "/2017/09/24/life-report-sep-2017.html">Sep 2017 report</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 22 Aug 17</span>
+      <br>
+      -->
+      <a href = "/2017/08/22/life-report-aug-2017.html">Aug 2017 report</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 30 May 17</span>
+      <br>
+      -->
+      <a href = "/2017/05/30/building-a-raspberry-pi-console.html">Building a Raspberry Pi console</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 29 May 17</span>
+      <br>
+      -->
+      <a href = "/2017/05/29/monthly-report-may-2017.html">May 2017 report</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 31 Mar 17</span>
+      <br>
+      -->
+      <a href = "/2017/03/31/quarterly-report-2017.html">2017 Quarterly Report I</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 27 Dec 16</span>
+      <br>
+      -->
+      <a href = "/2016/12/27/2016-in-review.html">2016</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 26 Dec 16</span>
+      <br>
+      -->
+      <a href = "/2016/12/26/2015-in-review.html">2015</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 6 Dec 16</span>
+      <br>
+      -->
+      <a href = "/2016/12/06/ORD-lo.html">ORD lo</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 28 Oct 16</span>
+      <br>
+      -->
+      <a href = "/2016/10/28/october-in-review.html">October in review; plans for November</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 8 Oct 16</span>
+      <br>
+      -->
+      <a href = "/2016/10/08/an-eventful-saturday.html">An eventful Saturday</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 20 Sep 16</span>
+      <br>
+      -->
+      <a href = "/2016/09/20/building-my-first-telegram-bot.html">Building my first Telegram bot</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 5 Sep 16</span>
+      <br>
+      -->
+      <a href = "/2016/09/05/september.html">September</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 11 Aug 16</span>
+      <br>
+      -->
+      <a href = "/2016/08/11/daily-report.html">Long-overdue update</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 24 Jun 16</span>
+      <br>
+      -->
+      <a href = "/2016/06/24/brexit.html">On Brexit, and the unreasonable effectiveness of demagoguery</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 26 May 16</span>
+      <br>
+      -->
+      <a href = "/2016/05/26/daily-report.html">An update on my life so far</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 11 May 16</span>
+      <br>
+      -->
+      <a href = "/2016/05/11/daily-report.html">Meeting with iDA staff (Oscar, Kiranjit and Eric)</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 10 May 16</span>
+      <br>
+      -->
+      <a href = "/2016/05/10/daily-report.html">Meeting with Mrs Hauw, swimming with Xiao Hui and future plans</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 5 May 16</span>
+      <br>
+      -->
+      <a href = "/2016/05/05/daily-report.html">daily report: I talk about what I've done for the past two weeks</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 24 Apr 16</span>
+      <br>
+      -->
+      <a href = "/2016/04/24/daily-report.html">daily report</a>
+    </li>
+    
+    <li>
+      <!--
+      <span class = 'post_date'> 23 Apr 16</span>
+      <br>
+      -->
+      <a href = "/2016/04/23/daily-report.html">daily report: my first post</a>
+    </li>
+    
+</ul>
+</div>
+
+
+</div>
