@@ -93,8 +93,8 @@ all we've just talked about. Why Acemoglu's model specifically?
 2. It nicely explains **The Paradox**.
 
 <div class='question-box'>
+<p><b> Review questions </b></p>
 <p> What was the empirical motivation for Acemoglu's model of directed technological change? </p>
-
 <p> How can the skill premium go up even as the relative supply of high-skilled workers goes up?</p>
 </div>
 
@@ -129,7 +129,7 @@ Combining these two equations we get the *skill premium* $$\omega$$:
 \omega \equiv \frac{w_H}{w_L} = \left(\frac{A_H}{A_L}\right)^\rho \left(\frac{H}{L}\right)^{-(1-\rho)}
 \end{equation}
 \begin{equation}
-= \left(\frac{A_H}{A_L}\right)^{(\sigma-1)/\sigma} \left(\frac{H}{L}\right)^{-(1-\sigma)} 
+= \left(\frac{A_H}{A_L}\right)^{(\sigma-1)/\sigma} \left(\frac{H}{L}\right)^{-(\frac{1}{\sigma})} 
 \end{equation}
 
 where $$\sigma$$ is the elasticity of substitution: $$\sigma \equiv \frac{1}{1-\rho}$$[^2]
@@ -149,7 +149,15 @@ premium](/img/acemoglu_explained/wage_premium.png)
 An increase in skilled workers ($$H^{*} \rightarrow H'$$) leads
 to a decrease in wage premium (movement from A $$\rightarrow$$ B).
 
+<div class='question-box'>
+	<p><b> Review questions </b></p>
+	<p> What is the production function stated by Acemoglu?</p>
+	<p> What is the skill premium?</p>
+	<p> What is the elasticity of substitution? How does it relate to \(\rho\)? </p>
+</div>
+
 [^2]: How do we get the elasticity of substitution?? How is it defined? TODO
+
 
 ___
 
@@ -211,7 +219,7 @@ $$A_H$$ or $$A_L$$, that increase the productivity of all high- or low-skill
 workers.  Let the fixed cost of producing an innovation be B and let the
 marginal cost of producing the new technology be 0. Then the marginal benefit
 of providing a new technology is simply the marginal increase in productivity
-($H$ or $L$) multiplied by the price of that good; this gives $$p_H H$$ and
+($$H$$ or $$L$$) multiplied by the price of that good; this gives $$p_H H$$ and
 $$p_L L$$ respectively.
 
 We can see that innovators will only choose to produce an innovation if they
@@ -261,7 +269,11 @@ high-skilled workers.
 Okay, we've shown that if $$\sigma > 1$$, when $$H \uparrow$$,
 $$\frac{A_H}{A_L} \uparrow$$. But what about the skill premium?
 
-$$ \omega = \frac{w_H}{w_L} = \frac{MPH}{MPL} = \frac{p_H H}{p_L L}$$
+\begin{equation}
+\omega \equiv \frac{w_H}{w_L} = \left(\frac{A_H}{A_L}\right)^\rho \left(\frac{H}{L}\right)^{-(1-\rho)}
+\end{equation}
+
+Substituting the result we got for $$\frac{A_h}{A_l}$$ into the equation, as well as the fact that $$\sigma \equiv \frac{1}{1-\rho}$$, we obtain
 
 $$ = \left(\frac{H}{L}\right)^{\sigma-2} $$
 
