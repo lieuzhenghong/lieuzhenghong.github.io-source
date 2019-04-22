@@ -242,15 +242,17 @@ This gives us the following condition:
 
 $$p_h H = p_l L$$
 
-We know that $$p_h$$ and $$p_l$$ are pinned down by the marginal productions in a competitive market. That gives us
+By consumer optimisation,
 
-$$p_H \equiv MPH = \frac{1}{\rho} (A_H H^{\rho-1})(A_L L ^\rho + A_H H^\rho)^{\frac{1}{\rho} - 1}$$
+$$\frac{p_H}{p_L} = \frac{MU_H}{MU_L}$$
 
-and
+After all, consider the case where LHS > RHS. Then, it would be a Pareto improvement to
+substitute 1 unit of H for 1 unit of L.
 
-$$p_L \equiv MPL = \frac{1}{\rho} (A_L L^{\rho-1})(A_L L ^\rho + A_H H^\rho)^{\frac{1}{\rho} - 1}$$
+But we know here that the production and utility functions are the same! Thus,
+$$MU_H == MPH$$ and $$MU_L = MPL$$.
 
-Dividing $$p_H$$ by $$p_L$$ gives us
+Therefore, we can reuse the previous result 
 
 $$\frac{p_H}{p_L} = \left [ \frac{A_H H}{A_L L} \right ] ^{\rho-1}$$
 
