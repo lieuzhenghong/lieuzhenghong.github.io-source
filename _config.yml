@@ -4,6 +4,6 @@ author: lieuzhenghong
 tag_page_layout: tag_page
 tag_page_dir: tag
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-tagging
