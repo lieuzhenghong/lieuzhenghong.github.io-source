@@ -4,10 +4,6 @@ author: "Zhenghong Lieu"
 tags: "academic economics macroeconomics explanation"
 ---
 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
-</script>
-
 <style>
 	.question-box {
 		display:flex;

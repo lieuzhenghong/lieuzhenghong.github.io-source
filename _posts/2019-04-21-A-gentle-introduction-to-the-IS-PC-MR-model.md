@@ -5,10 +5,6 @@ date: 22nd April 2019
 tags: "academic economics macroeconomics explanation"
 ---
 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
-</script>
-
 <style>
 	.question-box {
 		display:flex;
@@ -191,8 +187,13 @@ L = (y - y_T)^2 + (\pi - \pi_T)^2
 \end{equation}
 
 The MR is the central bank's best response to the Phillips curve. That is to say, it solves the optimisation problem
+
 \begin{equation}
-L = (y - y_T)^2 + (\pi - \pi_T)^2 \quad s.t. \pi_t = \pi_{t-1} + (y_t - y_e)
+L = (y - y_T)^2 + (\pi - \pi_T)^2
+\end{equation}
+
+\begin{equation}
+s.t. \pi_t = \pi_{t-1} + (y_t - y_e)
 \end{equation}
 
 So we substitute the PC into the loss function, differentiate, and
