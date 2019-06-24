@@ -20,11 +20,11 @@ public setting to want to virtue signal, and I will resist that tendency at all
 costs. The purpose of this post is to use it as a platform for introspection
 and find out as much as I can what went wrong and how to improve. The efficacy
 of this post in achieving those goals drops precipitously if I use this post to
-excoriate her nor to vindicate myself. So I undertake to be as fair, honest and
+excoriate her or to vindicate myself. So I promise to be as fair, honest and
 impartial as possible.
 
 In fact, I explicitly want to bend over backwards to be charitable to her point
-of view for two main reasons: 1) she is not here to defend herself, and it
+of view for two reasons: 1) she is not here to defend herself, and it
 would be incredibly unfair to post misrepresentations or strawmen of her
 views; 2) we are self-biased, and all of this is from my perspective, which
 means that trying to be fair and impartial necessarily means being biased
@@ -39,7 +39,7 @@ about these things makes me feel very vulnerable and uncomfortable.
 
 ## What went wrong?
 
-After a lot of introspection and extrospection (speaking with many trusted
+After a lot of introspection and "extrospection" (speaking with many trusted
 friends), I think I have two possible explanations:
 
 1. I did not love Judy enough
@@ -110,7 +110,9 @@ boyfriend gives the girlfriend a very sweet gift, and in return the girlfriend
 gives the boyfriend a very sweet kiss. I may personally disagree with this, but
 in these subjective matters is there even right or wrong?
 
-This nicely segues into the other interpretation for our breakup, **we had
+---
+
+This nicely segues into the other interpretation for our breakup: **we had
 different, incompatible ideas of how love should expressed**. Under this
 interpretation, while I loved her and she loved me, we felt that the other
 person did not, which led to relationship breakdown.
@@ -170,21 +172,27 @@ But as my mother wryly remarked (and it is a view I agree with), we didn't
 (don't) need much: forget the big bungalow, just spend more time with your
 wife and kids.
 
+---
+
 I also had/have an irrational fear of spending money. I find it very difficult.
 The Great Recession happened around 10 years ago, and my father's business went
-into ruin. (This would have been when I was 10 or 11). It was a tough time. I
-remember regularly coming home after school and seeing my mother in tears. We
-had no money to pay for anything. We couldn't pay the mortgage on the flat, we
-couldn't pay the utility bill. I overheard my mother on the phone with the
-school bus auntie. The auntie was chewing her out because we could not pay the
-school bus fare: 60 dollars (about 30 pounds?). "你們什麼家庭 連60塊都付不起".
-As a young child I felt helpless and distraught at seeing my mother in this
-state. There was a lot of crying, a lot of shouting, there was talk of divorce,
-and I know my mother seriously contemplated suicide at that point in time.
+into ruin. 
+
+It was a tough time. I remember regularly coming home after school and seeing
+my mother in tears. We had no money to pay for anything. We couldn't pay the
+mortgage on the flat, we couldn't pay the utility bill. I overheard my mother
+on the phone with the school bus auntie. The auntie was chewing her out because
+we could not pay the school bus fare: 60 dollars (about 30 pounds?).
+"你們什麼家庭 連60塊都付不起".  As a young child I felt helpless and distraught
+at seeing my mother in this state. There was a lot of crying, a lot of
+shouting, there was talk of divorce, and I know my mother seriously
+contemplated suicide at that point in time.
 
 Eventually things got better: my mother got a job as a tour guide, and since I
 received the scholarship both my mother and I have been able to be financially
-independent of my father. But it's difficult to overstate how big an effect
+independent of my father.
+
+But it's difficult to overstate how big an effect
 this has had on my psyche. In fact I can trace my interest in early retirement
 to these two formative events. It is my hope that by living below my means and
 by investing wisely the surplus, I can give my partner and children financial
@@ -226,12 +234,12 @@ regularly, for instance. It's even worse when it comes to subjective matters.
 For instance, the view held by her (and many others, including my mother), is
 that the boyfriend should foot the bill. I can see where this view comes from,
 especially in a social context where spending money, just like spending time,
-is a show of one's love. But I think there are reasonable stances on the basis
-of egalitarianism, or the view that both partners should pay according to their
-ability, and because both of us are students, neither should pay for the other.
+is a show of one's love. But I think one could reasonably disagree on the basis
+of egalitarianism. One could also believe that both partners should pay
+according to their ability, not their role in the relationship.
 
-Over the relationship I think I changed two things about myself, and I am
-grateful to her for sparking the changes.
+I think I showed my love for her by changing two things about myself over the
+relationship. Of course, I am grateful to her for sparking the changes.
 
 First is the way that I dressed. Judy didn't like the way I dressed; she said
 my clothes were ill-fitting and had weird patterns. Initially I thought "I
@@ -242,8 +250,8 @@ owed it to her to look attractive for her, so I donated away many of my
 existing clothes, threw away my underwear and socks, and bought new ones.  (We
 had an argument when she wouldn't allow me to buy Primark underwear, which I
 thought was perfectly good, but that is tangential). This wasn't a very
-difficult change to make; I only had to spend money, and only a few articles of
-clothing were sentimental to me.
+difficult change to make; I only had to spend (not very much) money, and only a
+few articles of clothing were sentimental to me.
 
 Fashion is of course a subjective thing, but some of my friends have told me
 that I dress much better now, so I have her to thank for this.
@@ -304,9 +312,9 @@ compromise and improve, fault aside. But I think she didn't *want* the
 relationship to be fair ---“為什麼什麼東西都要講公平？”---because she expected
 the boyfriend to be the more conciliatory one. Again, I can see where that
 comes from, but to me it just felt like more evidence that she would not change
-for me. 
-
-Maybe it was already a big compromise for her to step down and date me. 
+for me. I suspect part of the reason why she was not as willing to compromise
+was because of our very different socioeconomic backgrounds. It was already a
+big compromise for her to step down and date me. 
 
 To her, love was about being doted on and being given attention and gifts.
 Because she did not see that from me, she became resentful. To me, love was
@@ -335,9 +343,6 @@ I have many questions I hope to eventually be able to answer:
 - What is love?
 - What does it mean to love somebody?
 - Is love just best friendship + physical attraction? Or something more?
-- Does it differ depending on the person whom you are loving? Is the love I
-  feel for my mother different from that of the love I should feel for my
-  partner, other than that of physical attraction?
 
 ## What went right?
 
@@ -367,7 +372,9 @@ don't know *how* to do this. Some of my friends have suggested that when I find
 "the one", I'll automatically want to care for them and dote on them, etc. I
 don't know if this is true. Also by modus tollens, if I don't feel like I want
 to dote on them and care for them, does that mean I don't love them/ they are
-not "the one"? Scary if true. Is the concept of 'the one' even a coherent one?
+not "the one"? Scary if true. Is "the one" even a coherent concept? Or can
+everyone be the one for you, you just need to work more or less hard to be
+together?
 
 I'm not sure what the best way to approach arguments should be when my partner
 gets angry with me, and I don't agree. Initially I thought that the best
@@ -380,7 +387,7 @@ person's views. I realise that this can be frustrating to people, and it's
 often better just to let things slide. The problem is that I have trouble
 distinguishing what would be an interesting disagreement to have for a
 conversation, and what would be a relationship-fraying disagreement. Or maybe
-it's not the topic, it's that person's state of mind.
+it's not the topic, it's that person's state of mind...?
 
 ## Lessons for the next relationship?
 
@@ -401,10 +408,10 @@ an indictment of her; if anything, it should be an indictment of *myself*,
 seeing that I wanted to date her without first checking if we were compatible
 in those other ways.
 
-But those are just maybes. Whatever it may be, let's learn how to be more
+But those are just maybes. Whatever it may be, I want to learn how to be more
 loving, gallant, caring, doting---just like I needed to learn how to dress
 better, and be more generous with my money, and just like I learned in the past
-how to be less callous, less argumentative, and more introspective.
+how to be less callous, more honest, and more introspective.
 
 Love is mercurial and difficult to pin down, but I want very much to
 get it right.
