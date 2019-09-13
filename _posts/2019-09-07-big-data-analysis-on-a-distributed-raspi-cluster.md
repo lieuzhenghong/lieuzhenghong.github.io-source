@@ -13,9 +13,15 @@ tags:
 - minio
 ---
 
-I set up a distributed cluster of 16 Raspberry Pi 4s, calculate average road
-speeds on 50,000 trips (~85 million data points) using Apache Spark and MinIO,
-and visualise the data using QGIS.
+During my Summer 2019 internship with Inzura I set up a distributed cluster of
+16 Raspberry Pi 4s, calculate average road speeds on 50,000 trips (~85 million
+data points) using Apache Spark and MinIO, and visualise the data using QGIS.
+
+---
+
+This is the second project I've done with Raspberry Pis. The first one was a
+[Raspberry Pi game console](/2017/05/30/building-a-raspberry-pi-console.html)
+done back in 2017.
 
 As far as I know, this is the largest Apache Spark Raspi cluster that has been
 published online. There's an [eight-node Raspi 4 cluster
@@ -24,12 +30,6 @@ and a [six-node Raspi 2 cluster
 here](https://www.raspberrypi.org/magpi/pi-spark-supercomputer/) but i) ours is
 the biggest and ii) we have actually used the cluster to do "real" data
 analysis.
-
----
-
-This is the second project I've done with Raspberry Pis. The first one was a
-[Raspberry Pi game console](/2017/05/30/building-a-raspberry-pi-console.html)
-done back in 2017.
 
 ## Results
 
@@ -162,7 +162,7 @@ single machine?
 
 1. It's the only scalable solution when the number of trips gets large
 2. We get increased performance by parallelising computation
-3. 
+3. It's cool!
 
 ### Scalability
 
@@ -182,13 +182,17 @@ file (which means we don't have to worry about shared memory), and there is
 almost no work needed to combine the results of disparate parallel
 computations. This means that we can get a close-to-linear speedup simply by
 adding more computers --- which means that a cluster of Raspberry Pis will
-outperform even a beefy (and much more expensive) computer. Even if 16 Raspis
-don't outperform a single computer, 300 Raspis certainly will---and having laid
-the groundwork by building this pipeline, I have opened the door to all sorts
-of future data analysis and exploration tasks.
+outperform even a beefy (and much more expensive) computer.
+
+Even if 16 Raspis don't outperform a single computer, 300 Raspis certainly
+will, and it is easy now to add more Raspis now that the groundwork has been
+laid. This opens the door to all sorts of future data analysis and exploration
+tasks which may be prohibitively expensive for a single computer to run (in
+terms of wall-clock time).
 
 ### Cool factor
 
+It's cool and educational.
 
 ## Setting up the cluster
 
@@ -204,13 +208,15 @@ and successfully deployed Spark on the 16 worker Raspis:
 The cluster computer has 64 cores and 45GB of memory---already much better than
 my laptop.
 
-I have written a bash script that should roughly automate (but not completely)
-the installation process
+I have written a bash script that should automate (but not completely) the
+installation process
 [here](https://gist.github.com/lieuzhenghong/c062aa2c5544d6b1a0fa5139e10441ad).
+The only thing one has to do apart from this is to edit the `core-site.xml`
+file to point to one's S3 bucket/MinIO server.
 
 ## Apache Spark code
 
-I gained the necessary knowledge to do this data analysis project by going
+I gained the necessary knowledge to do this data analysis project by working
 through part of the [Functional Programming in Scala
 Specialisation](https://www.coursera.org/specializations/scala). I finished the
 courses *Functional Programming Principles in Scala*, *Parallel Programming*
@@ -280,7 +286,7 @@ Scala, Spark and distributed computing were completely new to me, and I had a
 great time learning them. Learning about the abstractions of functional
 programming expanded my mind. For instance, I had heard about monoids and
 monads before but I only now understand their significance. Something that
-really clicked for me was an explanation of where monoids map easily to
+really clicked for me was an explanation of how monoids map easily to
 parallel programming, due to their associativity and identity.
 
 Spark was cool as well. There were many helpful tips in the course about
@@ -321,8 +327,9 @@ From Richard:
 > could be added to each node. Like the google fpga or Intel hardware. this is
 > faster than GPU
 
-# Conclusion
+## Conclusion
+
+[TODO]
 
 I am very happy to have had the opportunity to work on this project.
 
-[TODO]
