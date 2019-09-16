@@ -5,7 +5,7 @@ tags:
 - programming
 - build
 - making
-- big-data
+- data-science
 - apache-spark
 - GIS
 - scala
@@ -13,9 +13,11 @@ tags:
 - minio
 ---
 
-During my Summer 2019 internship with Inzura I set up a distributed cluster of
-16 Raspberry Pi 4s, calculate average road speeds on 50,000 trips (~85 million
-data points) using Apache Spark and MinIO, and visualise the data using QGIS.
+I set up a distributed cluster of 16 Raspberry Pi 4s, calculate average road
+speeds from 50,000 trips (~85 million data points) using Apache Spark, MinIO,
+then visualise the data using QGIS, Python and SQL.
+
+(Summer 2019 internship with Inzura)
 
 ---
 
@@ -167,7 +169,7 @@ single machine?
 ### Scalability
 
 I had only bothered to download a small sample of 50,000 trips. But Inzura has
-a corpus of over 2 million trips and growing. 2 million trips certainly doesn't
+a corpus of millions of trips and growing. It certainly doesn't
 fit on a single machine's memory (it doesn't even fit on disk). So the most
 naive approach of reading all the files into memory at once and calculating the
 average that way won't work. Something that *does* work is to read the files in
@@ -192,7 +194,8 @@ terms of wall-clock time).
 
 ### Cool factor
 
-It's cool and educational.
+Why not just use Google Cloud or something?---because this is cooler and more
+educational.
 
 ## Setting up the cluster
 
@@ -280,24 +283,128 @@ object SimpleApp {
 }
 ```
 
-## Things I learned
+The Spark code gives the road IDs, but we still have to get the coordinates
+that that road ID corresponds to. So I queried the road database (which also
+runs in the cluster) with a couple of lines of throwaway Python code.
 
-Scala, Spark and distributed computing were completely new to me, and I had a
-great time learning them. Learning about the abstractions of functional
-programming expanded my mind. For instance, I had heard about monoids and
-monads before but I only now understand their significance. Something that
-really clicked for me was an explanation of how monoids map easily to
-parallel programming, due to their associativity and identity.
+I had written a SQL utility function for my [previous project on optimising SMS
+messages](/2019/09/14/using-thompson-sampling-to-optimise-SMS-effectiveness.html)
+which I was able to reuse here.
 
-Spark was cool as well. There were many helpful tips in the course about
-optimising one's Spark program (always try to use Pair RDDs/Datasets, avoid
-shuffles whenever possible, minimise the data sent over the network, using
-range partitioning...) but sadly none of them were useful for this project.
+```python
+import time
+from sql_utils import query
 
-It was difficult trying to get Spark working on the Raspberry Pi cluster---in
-part because not many people have done it---but I'm pleased to have cracked
-this tough nut. In fact the project made me want to build my own Raspi
-cluster...
+# First read csv
+
+import csv
+
+rows = []
+
+with open("results-49998.csv") as f:
+    csvreader = csv.reader(f)
+    header = next(csvreader, None)
+    print(header)
+    for row in csvreader:
+        rows.append(row)
+
+BATCH_SIZE = 10000
+NUM_ROWS = len(rows)
+
+pointer = 0
+
+# Break up the rows
+
+link_ids = [x[0] for x in rows]
+
+all_start = time.time()
+while pointer < NUM_ROWS:
+    start = time.time()
+    link_ids_subset = link_ids[pointer:pointer+BATCH_SIZE]
+    array_string = ", ".join(str(i) for i in link_ids_subset)
+    array_string = f"({array_string})"
+    query_string = f"SELECT geom from (SELECT DISTINCT(link_id), " +
+	"geom FROM streets WHERE link_id IN {array_string}) as f"
+
+    # Send out the query
+    query_result = (query(query_string))
+    for i in range(pointer, min(pointer+BATCH_SIZE, len(rows))):
+        rows[i].append(query_result[i-pointer][0])
+
+    end = time.time()
+    print(f"Time taken to do {pointer}:{pointer+BATCH_SIZE}: {end-start}")
+
+    pointer += BATCH_SIZE
+
+all_end = time.time()
+
+print(f"Time taken to make all the queries: {all_end-all_start}")
+
+header.append("geom")
+
+with open("results-49998-with-geom.csv", "w") as f:
+    f.write(",".join(str(i) for i in header))
+    f.write('\n')
+
+with open("results-49998-with-geom.csv", "a") as f:
+    for row in rows[:NUM_ROWS]:
+        f.write(",".join(str(i) for i in row))
+        f.write('\n')
+```
+
+There are issues with such an approach: when the number of unique road IDs get
+large, we won't be able to load all the rows into memory like I do here. But
+there were only ~140,000 unique link IDs, and I think even if you were to cover
+the whole of the UK the number of links would not exceed 2 million --- which
+fits well within the memory of a single machine.
+
+I made two main optimisations.
+
+First of all, I batched up the queries (instead of querying `SELECT * FROM
+streets WHERE link_ID = linkid`, do `WHERE link_ID IN {array_string}`) because
+I knew that latency would be the primary bottleneck. This gave a huge speedup:
+making 10,000 queries (without caching) only took about 1.2 seconds. To give a
+comparison, measured round-trip time was about 0.1s (100ms); if I had made
+140,000 individual queries, this would have taken 14,000 seconds (4 hours!),
+and I was able to do all the queries in 14 seconds.
+
+Second, I knew that the linkIDs were indexed in the database, and so I made
+sure to sort the linkIDs before batching and sending them to maximise the
+probability of a cache hit.
+
+```
+(base) lieu@bigbeast:~/dev/cluster-computing$ python3 get_road_geom.py 
+['linkID', 'count(linkID)', 'avg(absVelocity)']
+Time taken to do 0:10000: 0.5610289573669434
+Time taken to do 10000:20000: 0.48032593727111816
+Time taken to do 20000:30000: 0.5004429817199707
+Time taken to do 30000:40000: 0.5266928672790527
+Time taken to do 40000:50000: 0.5340712070465088
+Time taken to do 50000:60000: 0.6023671627044678
+Time taken to do 60000:70000: 0.5589091777801514
+Time taken to do 70000:80000: 0.48449015617370605
+Time taken to do 80000:90000: 0.543027400970459
+Time taken to do 90000:100000: 0.5296523571014404
+Time taken to do 100000:110000: 0.6949601173400879
+Time taken to do 110000:120000: 1.437162160873413
+Time taken to do 120000:130000: 1.2379283905029297
+Time taken to do 130000:140000: 1.15696120262146
+Time taken to make all the queries: 9.848754644393921
+```
+
+The final CSV looked like this
+
+```csv
+linkID;count(linkID);avg(absVelocity);geom
+17341560;3;25.53091932029027;LINESTRING (-4.17935 53.21241, -4.17968 53.21257, -4.18033 53.21294, -4.18115 53.21319, -4.18138 53.2133, -4.18184 53.21339, -4.18204 53.21346, -4.18262 53.21369, -4.18334 53.21389, -4.18394 53.21439, -4.18473 53.21465, -4.18535 53.21475, -4.18618 53.21478)
+17341703;1;31.053999640650744;LINESTRING (-4.17386 53.2051, -4.17501 53.20569, -4.17523 53.2058, -4.17534 53.20584)
+```
+
+The LINESTRING is a [Well-Known Text (WKT) geometry
+representation](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry)
+and corresponds to the coordinates that a road occupies. 
+
+
 
 ## Future extensions
 
@@ -318,6 +425,14 @@ enlightening to compare a driver's driving patterns to a reference distribution
 of other drivers on the same roads---and this data analysis helps us create
 that reference distribution.
 
+Finally, we could use the ground truth of average speeds as input to a machine
+learning model. Can we predict the probability of a driver getting into an
+accident given the roads that he drives on, the speed he drives on those roads,
+and how he drives on them? A reference distribution is surely instructive here:
+it's not as dangerous to go fast when everyone else around you is going fast,
+but it's very dangerous to go fast when everyone else is slow (or go slow when
+everyone else is fast).
+
 From Richard:
 
 > I think big data analysis is a definite. GPUs will be faster than CPU at
@@ -327,9 +442,32 @@ From Richard:
 > could be added to each node. Like the google fpga or Intel hardware. this is
 > faster than GPU
 
+> you should mention that spark was bare metal and that the next step will be
+> to migrate to Docker Swarm deployed Spark nodes
+
+## What I learned
+
+Scala, Spark and distributed computing were completely new to me, and I had a
+great time learning them. Learning about the abstractions of functional
+programming expanded my mind. For instance, I had heard about monoids and
+monads before but I only now understand their significance. Something that
+really clicked for me was an explanation of how monoids map easily to
+parallel programming, due to their associativity and identity.
+
+Spark was cool as well. There were many helpful tips in the course about
+optimising one's Spark program (always try to use Pair RDDs/Datasets, avoid
+shuffles whenever possible, minimise the data sent over the network, using
+range partitioning...) but sadly none of them were useful for this project.
+
+It was difficult trying to get Spark working on the Raspberry Pi cluster---in
+part because not many people have done it---but I'm pleased to have cracked
+this tough nut. In fact the project made me want to build my own Raspi
+cluster...
+
 ## Conclusion
 
-[TODO]
+I am very happy to have had the opportunity to work on this project. I am very
+grateful to Richard for giving me this very cool project to work on.
 
-I am very happy to have had the opportunity to work on this project.
-
+Richard seems to be glad too. Running data analysis on the cluster has been his
+dream for quite a while now, but nobody has had the bandwidth to do it.
