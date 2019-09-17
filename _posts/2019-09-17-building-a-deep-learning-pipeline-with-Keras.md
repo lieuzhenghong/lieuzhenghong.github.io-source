@@ -6,10 +6,10 @@ tags:
 - deep-learning
 ---
 
-I built and iterated on a deep learning model that replicates the outputs of an
-existing rule-based system that rates driver performance while having 100x
-faster inference. As a prerequisite to iterating on the model I also built a
-deep learning pipeline that did:
+I built and iterated on a deep learning model that replicates the outputs of
+an existing rule-based system while having 100x faster inference. As a
+prerequisite to iterating on the model I also built a deep learning pipeline
+that did:
 
 - Data reading and cleaning
 - Feature extraction and selection
@@ -18,11 +18,11 @@ deep learning pipeline that did:
 
 I iterated over 6 major model configurations (training ~50 models overall) and
 got the model RMSE to fall from 0.23 (simple RNN) to 0.128. This significantly
-improves upon a baseline model (RMSE = 0.22) but is still not ideal.
+improves upon a baseline model (RMSE = 0.22) but there is still room for improvement.
 
-However, I have completed the pipeline, which will speed up future iteration
-significantly. I will continue the project with the Oxford Strategy Group
-(Digital), where I will probably lead the team of consultants.
+The pipeline I built will speed up future iteration significantly. I will
+continue the project with the Oxford Strategy Group (Digital), where I might
+lead the team of consultants.
 
 (Summer 2019 internship with Inzura)
 
@@ -31,7 +31,7 @@ significantly. I will continue the project with the Oxford Strategy Group
 ## Motivation
 
 Inzura AI has a proprietary algorithm called the "Driver Profiler", which is a
-complicated rule-based system that measures how drivers drive. It derives
+complex rule-based system that measures how drivers drive. It derives
 quantities like acceleration and velocity from GPS data. It looks up driver
 position in a road network database to check for speeding (this road network
 database allowed me to do data analysis on average speeds in [another project I
@@ -45,9 +45,9 @@ Finally, it aggregates all the events to give a "trip score", which is how
 safely the driver drove on the trip.
 
 This rule-based system works well but has two limitations. First, the database
-lookups took a lot of time (latency) and necessitated an always-online device.
+lookups take a lot of time (latency) and necessitate an always-online device.
 
-Second, all the code for the driver profiler was written in Python. Richard
+Second, most of the code for the driver profiler is written in Python. Richard
 Jelbert, the CEO and co-founder of Inzura, wanted to deploy a version of the
 driver profiler on dashcams. However, dashcams are embedded systems that run
 C/C++.
@@ -309,7 +309,7 @@ dense_2 (Dense)              (None, 6)                 390
 convolution layers. This gave me the lowest test loss so far. **Train/test loss 0.1928/0.1857.**
 
 The reason why the test loss is smaller than the training loss is because of
-dropout. From [a StackOverflow post]:
+dropout. From [a StackOverflow post](https://stats.stackexchange.com/a/205831/229360):
 
 > One possibility: If you are using dropout regularization layer in
 your network, it is reasonable that the validation error is smaller than
@@ -356,11 +356,11 @@ was `multiprocessing=True` which I did set. But what I had neglected to
 change was `workers`, which defaults to 1 if unspecified. Once I set
 `workers=10` we got---predictably---a 10x speedup in training.
 
-### Pointing the validation set to be the same as the test set
+### Using the same data for both the validation and test set
 
 A silly mistake I made with list slicing meant that my validation set was the
-same as my test set. I saw the validation loss keep decreasing to 0.09 and was
-incredibly pleased; I thought it was too good to be true. It was!
+same as my test set. I saw the validation loss keep decreasing to 0.09 and
+was incredibly pleased; I thought it was too good to be true. It was!
 
 ## My thoughts
 
@@ -408,5 +408,5 @@ deep learning intuitions.
 
 Although I didn't get to finish the project, I still learned a lot. I had to
 touch every single part of the deep learning pipeline---not just the model
-code itself---which I really appreciated. A big thanks to Richard Jelbert for
+code itself---which I really appreciated. A big thanks to Richard for
 giving me this opportunity.
