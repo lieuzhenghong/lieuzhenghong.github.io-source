@@ -365,8 +365,7 @@ completion. I had originally wanted to kill two birds with one stone and use
 this for my BEE thesis, but a null finding isn't particularly exciting, so I
 will keep looking. [^3]
 
-[^3]: Yes, I know I'm contributing to publication bias---but my grades are
-  on the line here...
+[^3]: Yes, I know I'm contributing to publication bias---but my grades are on the line here...
 
 I learned quite a lot about Bayesian inference in the course of designing the
 experiment, and would like to learn more about it. When I have more bandwidth I

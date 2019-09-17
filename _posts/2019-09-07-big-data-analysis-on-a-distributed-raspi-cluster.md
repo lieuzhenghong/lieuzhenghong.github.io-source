@@ -123,10 +123,10 @@ This is the Raspberry Pi compute cluster. It's taller than a man:
 
 ![full body shot of cluster](/img/raspi-cluster/full-shot.jpg)
 
-It was built by Richard, the CEO of Inzura. Almost everything you see is
-3D-printed: that includes the faceplates, the clips and the holding rack (for
-the Raspis). It contains 16 Raspi 4s and 25 assorted Raspi 3B/3/2/1s. For this
-project I only used the Raspi 4s.
+It was built by Richard Jelbert, the CEO and co-founder of Inzura. Almost
+everything you see is 3D-printed: that includes the faceplates, the clips and
+the holding rack (for the Raspis). It contains 16 Raspi 4s and 25 assorted
+Raspi 3B/3/2/1s. For this project I only used the Raspi 4s.
 
 The structure of the cluster is hexagonal: there are 5 storeys and 6 segments on
 each storey. One of the segments is reserved for SSDs (data storage and database
@@ -467,7 +467,8 @@ cluster...
 ## Conclusion
 
 I am very happy to have had the opportunity to work on this project. I am very
-grateful to Richard for giving me this very cool project to work on.
+grateful to Richard Jelbert for giving me this very cool project to work on.
 
-Richard seems to be glad too. Running data analysis on the cluster has been his
-dream for quite a while now, but nobody has had the bandwidth to do it.
+Richard Jelbert seems to be glad too. Running data analysis on the cluster
+has been on his wishlist for quite a while now, but nobody has had the
+bandwidth to do it.
