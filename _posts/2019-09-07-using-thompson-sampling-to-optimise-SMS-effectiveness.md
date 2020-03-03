@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Building an Bayesian SMS sender"
 date: 2019-09-16
 tags:

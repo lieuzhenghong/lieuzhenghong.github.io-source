@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "A gentle introduction to the IS-PC-MR model"
 author: "Zhenghong Lieu"
 date: 22nd April 2019

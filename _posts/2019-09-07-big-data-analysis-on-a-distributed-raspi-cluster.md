@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Doing distributed data analysis on a Raspberry Pi cluster
 date: 2019-09-12
 tags:

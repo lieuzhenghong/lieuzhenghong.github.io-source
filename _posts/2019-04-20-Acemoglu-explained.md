@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Explaining Acemoglu's model of directed technical change: a primer"
 author: "Zhenghong Lieu"
 tags: "academic economics macroeconomics explanation"

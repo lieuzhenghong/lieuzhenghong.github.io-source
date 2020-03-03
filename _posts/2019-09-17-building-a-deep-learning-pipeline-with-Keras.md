@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Building a deep learning pipeline + model with Keras and PlaidML
 date: 2019-09-17
 tags:
