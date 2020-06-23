@@ -228,7 +228,31 @@ Do all the admin stuff
 - Update website design
 - Update projects page
 
+### Postmortem of TT Week 8
+
+I basically didn't do any of those things: instead I played a lot of Terraria. Oops.
+
 ## Summer W1 : 21--27 Jun
+
+- Pack my stuff (Thursday)
+- Send my stuff to Ober-Ramstadt (Friday)
+- Write emails
+- Write blog posts
+- Update website design
+- Update projects page
+- Finalise the project I'll be working on with GSoC
+- Scope out the path tracer project
+- Scope out the work that needs to be done to make both papers publishable
+
+Key goal: scoping. Making sure that I'm absolutely certain about what needs to
+be done, so I can hit the ground running writing code every single day.
+
+### Monday 22nd June
+
+- Send email to Moon (done)
+- Write out the design document for the summer path tracer 
+- Write my semiannual blog post
+- Send email to Prof Huang
 
 ## Summer W2 : 28 Jun--4 Jul
 
