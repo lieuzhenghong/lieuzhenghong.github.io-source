@@ -12,7 +12,19 @@ tags:
 1. TOC
 {:toc}
 
-# Introduction
+# Introduction and overview
+
+As mentioned in my previous post, I'm now calling the reviews semiannual and
+annual reviews.
+
+This semiannual review coincides with the end of my undergraduate degree, and
+marks another change of state. 2014 was the transition from high school student
+to NSF, 2017 the transition from NSF to undergraduate student, and 2020 the
+transition from undergraduate student to... graduate student? full-time
+employed? Who knows at this point. More on this later.
+
+I'll talk about the eight core courses I took, how the exams went, and then
+finish with some final parting throughts on Oxford and my degree.
 
 # What I did this year
 
@@ -213,6 +225,14 @@ good outcomes). More on this later. Ironically, I thought that PolSoc and
 Game Theory actually went the best despite the fact that I spent so little time
 on either of them. 
 
+I also felt like I didn't actually revise that hard: I'm not great at putting
+in the consistent and boring work daily. I work best in short and intense
+bursts, especially when the content is interesting, and having to plug along
+re-learning stuff I already know for an exam many weeks later really saps my
+motivation. I think I only studied around 4 or 5 hours properly a day on
+average, if that---and often got sidetracked with YouTube videos, computer
+games, and side projects.
+
 ## Thesis in Politics
 
 The thesis has really come a long way from its beginnings in 2019. I wrote a
@@ -264,12 +284,48 @@ And maybe (at the highest) I should hope for a 78.
 
 ## Behavioural and Experimental Economics
 
-I didn't like BEE that much because 
+I didn't like BEE that much because of the way the course was taught.
+
+I like the idea of BEE and I think Johannes is doing something very laudable to
+teach this very different course within the conservative Oxford system. The
+course is very new: I think this is the second or third year it's being run?
+But as a consequence he's quite conservative with his marking and the spread of
+marks is low, and the mean is exactly 65. 
+
+I didn't learn much from the lectures. Also, it's quite difficult for him to
+give so many tutes to so many groups. I think there were eight groups and he
+gave three tutes to each of the groups --> twenty four tutes in total. I also
+felt that the tutorials weren't that helpful because i) one hour is not enough
+time to really dig into ii) three tutes are not enough to get proper feedback
+about our experiment design/data analysis. But again, cannot really blame
+Johannes because 8x3 is already quite a large teaching load on top of giving
+essentially all of the lectures.
+
+I spent too much time building the very complicated experiment on NodeGame, and
+running in on Amazon Mechanical Turk. Most other groups did simple survey
+experiments using Qualtrics, but I went all out trying to build something
+real-time and what not. I guess I was trying to be ambitious and do an
+experiment that was very nontrivial and very impressive. But in the end I don't
+think the very technically impressive experiment was that impressive at all. It
+was certainly difficult and I learned quite a bit, but it really wasn't worth
+the additional trouble.
+
+My behavioural economics experiment tried to investigate how communication
+fosters cooperation in the context of the Stag Hunt game. We know that the Stag
+Hunt game has two pure equilibria, one where both players hunt Hare and one
+where both players coordinate on Stag. The {Hare, Hare} equilibrium is risk
+dominant (it gives the higher expected payoffs if you assume the player plays
+50-50), while the {Stag, Stag} equilibrium is Pareto-dominant (it's a
+Pareto-improvement over the other equilibrium). Which equilibrium will people
+play? Opinions differ. But what is clear, and has been proven in experiments,
+is that 1) communication helps coordination on the Pareto-efficient payoff; 2)
+free-form communication (as opposed to "restricted" communication where
+participants can only say "I intend to play Stag" or "I intend to play Hare")
 
 ## Macroeconomics
 
 Spent the most time revising for this, which in hindsight is probably not that
-smart? because it tends to be a low-variance subject.
+smart because it tends to be a low-variance subject. I made rather comprehensive
 
 ## Microeconomics
 
@@ -306,6 +362,24 @@ The exam was definitely made more difficult by Peter Eso to compensate
 
 ## Political Sociology
 
+# Weathering the coronavirus
+
+# Thoughts about my degree
+
+The three years in Oxford have made me grow very much as a person. I've done a
+plethora of embarrassing, cringey, thirsty things (and no, it didn't stop even
+after matriculation). Sometimes recalling these things keep me up at night. It
+is a slow and painful process of learning not to say/do these things.
+
 # My plan for the summer
 
+# Addendum on blogs being taken down
+
+Philip Guo
+
+Scott Alexander
+
+
 # Final thoughts
+
+

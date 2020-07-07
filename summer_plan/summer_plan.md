@@ -250,11 +250,96 @@ be done, so I can hit the ground running writing code every single day.
 ### Monday 22nd June
 
 - Send email to Moon (done)
-- Write out the design document for the summer path tracer 
+- Write out the design document for the summer path tracer (done)
 - Write my semiannual blog post
 - Send email to Prof Huang
 
+### Wednesday 24th June
+
+- Send email to Prof Huang
+- Scope out the project I'll be doing for MGGG
+- Write my semiannual blog post
+
+Zhenghong: work with JN and Nick on getting adjacency info into Districtr and
+writing functions for cut edges and contiguity checks. Time: 2-4 weeks
+
+Motivation: to be able to do graphical analysis on the plans drawn by Districtr
+akin to that we can do with Gerrychain
+
+MVP: a Python script that takes in shapefile + district assignments (in JSON)
+and returns several metrics like contiguity and number of cut edges.
+
+Rough approach:
+
+For each state:
+
+1. Import the shapefile
+2. Using the shapefile, create the dual graph of a state
+
+For each proposed districting plan:
+
+3. Import the district assignments JSON
+4. Using the district assignments JSON, form the graph partition (possibly with
+   Gerrychain, NetworkX, something else)
+5. Using the graph partition, answer queries like number of cut edges and
+   contiguity.
+
+Questions to ask: How large is the largest district assignment
+JSON? Are metrics like number of cut edges and contiguity even well-defined for
+incomplete district assignments?
+
+Possible extensions: Integrate into the main Districtr app, either locally on
+the client or as an AWS Lambda function. Consider and implement other
+interesting metrics.
+
+### Thursday 25th June
+
+- Go on a hike with Celine
+- Pack up all my suitcase and boxes
+- Start working on GSoC project (finally):
+  - Get a Colab notebook up and running
+  - Make sure that it's backed up successfully to GH
+  - Import the Iowa shapefile and create the dual graph of Iowa
+  - That should take up the entire work block.
+- Attend both network talks
+
+### Friday 26th June
+
+The task description Moon set was "Zhenghong: work with JN and Nick on getting
+adjacency info into Districtr and writing functions for cut edges and
+contiguity checks. Time: 2-4 weeks". 
+
+## Update for Friday 26th June 2020
+
+OK, I think I've gotten a good sense of what I was tasked to do (successfully
+calculate contiguity and cut edges given a Districtr assignment JSON). My
+conclusions:
+
+- It's straightforward---once you know how to do it---to convert Districtr
+  assignments into a GerryChain graph partition on the server-side. This is in
+  large part due to the helpful functions that GerryChain already possesses.
+- The assignment files are not too large, so presumably one could send the
+  assignments to the server after suitably compressing them. We can also modify
+  Districtr to send only the assignment deltas, which shouldn't be too
+  difficult. We'd have to do more testing on how long the partition generation
+  would take on the server side. Are we thinking some sort of AWS Lambda
+  function?
+- Generating the dual graph from a shapefile takes a long time, and these
+  should be precalculated and stored on the server.
+
+What should I do next?
+
 ## Summer W2 : 28 Jun--4 Jul
+
+### Sunday 28th June
+
+- Researchathon: scope out the research topic and block out my time
+- Summer path tracer: take a look at the Julia libraries and commit the first commit
+- Draft email to IMDA
+- Draft email to Moon
+- Draft email to MP?
+- Draft email to Prof Huang?
+
 
 ## Summer W3 : 5--11 Jul
 

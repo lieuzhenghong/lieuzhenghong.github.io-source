@@ -1,8 +1,7 @@
 /* line 2, ../sass/nav.scss */
 nav ul {
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
+  flex-flow: column;
 }
 /* line 6, ../sass/nav.scss */
 nav ul li {
@@ -11,4 +10,13 @@ nav ul li {
 /* line 9, ../sass/nav.scss */
 nav ul li a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 10, ../sass/base.scss */
+  nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
 }

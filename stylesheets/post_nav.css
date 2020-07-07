@@ -16,6 +16,7 @@
 }
 /* line 16, ../sass/post_nav.scss */
 .content > .post_list > ul li:nth-child(2n) {
-  background-color: #c8c8c8;
+  /*background-color: #c8c8c8;*/
+  background-color: #e8e8e8;
 }
 

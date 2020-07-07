@@ -54,7 +54,11 @@
 </ul></li>
 <li><a href="#summer-w1-2127-jun">Summer W1 : 21–27 Jun</a><ul>
 <li><a href="#monday-22nd-june">Monday 22nd June</a></li>
+<li><a href="#wednesday-24th-june">Wednesday 24th June</a></li>
+<li><a href="#thursday-25th-june">Thursday 25th June</a></li>
+<li><a href="#friday-26th-june">Friday 26th June</a></li>
 </ul></li>
+<li><a href="#update-for-thursday-26th-june-2020">Update for Thursday 26th June 2020</a></li>
 <li><a href="#summer-w2-28-jun4-jul">Summer W2 : 28 Jun–4 Jul</a></li>
 <li><a href="#summer-w3-511-jul">Summer W3 : 5–11 Jul</a><ul>
 <li><a href="#gmtk-game-jam-10th-12th-july-8pm8pm">GMTK Game Jam: 10th – 12th July, 8pm–8pm</a></li>
@@ -225,10 +229,56 @@
 <h3 id="monday-22nd-june">Monday 22nd June</h3>
 <ul>
 <li>Send email to Moon (done)</li>
-<li>Write out the design document for the summer path tracer</li>
+<li>Write out the design document for the summer path tracer (done)</li>
 <li>Write my semiannual blog post</li>
 <li>Send email to Prof Huang</li>
 </ul>
+<h3 id="wednesday-24th-june">Wednesday 24th June</h3>
+<ul>
+<li>Send email to Prof Huang</li>
+<li>Scope out the project I’ll be doing for MGGG</li>
+<li>Write my semiannual blog post</li>
+</ul>
+<p>Zhenghong: work with JN and Nick on getting adjacency info into Districtr and writing functions for cut edges and contiguity checks. Time: 2-4 weeks</p>
+<p>Motivation: to be able to do graphical analysis on the plans drawn by Districtr akin to that we can do with Gerrychain</p>
+<p>MVP: a Python script that takes in shapefile + district assignments (in JSON) and returns several metrics like contiguity and number of cut edges.</p>
+<p>Rough approach:</p>
+<p>For each state:</p>
+<ol type="1">
+<li>Import the shapefile</li>
+<li>Using the shapefile, create the dual graph of a state</li>
+</ol>
+<p>For each proposed districting plan:</p>
+<ol start="3" type="1">
+<li>Import the district assignments JSON</li>
+<li>Using the district assignments JSON, form the graph partition (possibly with Gerrychain, NetworkX, something else)</li>
+<li>Using the graph partition, answer queries like number of cut edges and contiguity.</li>
+</ol>
+<p>Questions to ask: How large is the largest district assignment JSON? Are metrics like number of cut edges and contiguity even well-defined for incomplete district assignments?</p>
+<p>Possible extensions: Integrate into the main Districtr app, either locally on the client or as an AWS Lambda function. Consider and implement other interesting metrics.</p>
+<h3 id="thursday-25th-june">Thursday 25th June</h3>
+<ul>
+<li>Go on a hike with Celine</li>
+<li>Pack up all my suitcase and boxes</li>
+<li>Start working on GSoC project (finally):
+<ul>
+<li>Get a Colab notebook up and running</li>
+<li>Make sure that it’s backed up successfully to GH</li>
+<li>Import the Iowa shapefile and create the dual graph of Iowa</li>
+<li>That should take up the entire work block.</li>
+</ul></li>
+<li>Attend both network talks</li>
+</ul>
+<h3 id="friday-26th-june">Friday 26th June</h3>
+<p>The task description Moon set was “Zhenghong: work with JN and Nick on getting adjacency info into Districtr and writing functions for cut edges and contiguity checks. Time: 2-4 weeks”.</p>
+<h2 id="update-for-thursday-26th-june-2020">Update for Thursday 26th June 2020</h2>
+<p>OK, I think I’ve gotten a good sense of what I was tasked to do (successfully calculate contiguity and cut edges given a Districtr assignment JSON). My conclusions:</p>
+<ul>
+<li>It’s straightforward—once you know how to do it—to convert Districtr assignments into a GerryChain graph partition on the server-side. This is in large part due to the helpful functions that GerryChain already possesses.</li>
+<li>The assignment files are not too large, so presumably one could send the assignments to the server after suitably compressing them. We can also modify Districtr to send only the assignment deltas, which shouldn’t be too difficult. We’d have to do more testing on how long the partition generation would take on the server side. Are we thinking some sort of AWS Lambda function?</li>
+<li>Generating the dual graph from a shapefile takes a long time, and these should be precalculated and stored on the server.</li>
+</ul>
+<p>What should I do next?</p>
 <h2 id="summer-w2-28-jun4-jul">Summer W2 : 28 Jun–4 Jul</h2>
 <h2 id="summer-w3-511-jul">Summer W3 : 5–11 Jul</h2>
 <h3 id="gmtk-game-jam-10th-12th-july-8pm8pm">GMTK Game Jam: 10th – 12th July, 8pm–8pm</h3>

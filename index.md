@@ -9,8 +9,7 @@ layout: index
 
 I am currently reading Politics, Philosophy and Economics at Merton College,
 and am interested in game theory, computational political science, Bayesian
-inference, and distributed computing. My resume can be found at [this very
-site](https://lieuzhenghong.com/resume).
+inference, and distributed computing.
 
 My interests are capricious but the ones I always come back to include
 programming, eating, cooking and lifting weights.
@@ -20,7 +19,7 @@ views regarding them: embryonic genetic selection for human betterment,
 financial planning for early retirement, and optimising what and how I eat to
 maximise health and fitness.
 
-<p>I use this page as a personal diary. In it I record my thoughts and
+I use this page as a personal diary. In it I record my thoughts and
 feelings, my views and goals, my struggles and triumphs. I like looking at my
 old posts and see how I have changed. I particularly enjoy reading the problems
-that faced me in the past and seeing how they were overcome (or not).</p>
+that faced me in the past and seeing how they were overcome (or not).
