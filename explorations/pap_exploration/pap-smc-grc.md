@@ -1,5 +1,5 @@
 ---
-title: "Singapore's GRC system advantages the PAP: a game-theoretic analysis"
+title: "Singapore's GRC system likely advantages the PAP: a game-theoretic analysis"
 author: Lieu Zheng Hong
 date: 7th July 2020
 ---
