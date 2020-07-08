@@ -1,5 +1,5 @@
 ---
-title: "Singapore's GRC system likely advantages the PAP: a game-theoretic analysis"
+title: "Singapore's GRC system advantages the PAP: a game-theoretic analysis"
 author: Lieu Zheng Hong
 date: 7th July 2020
 ---
@@ -30,7 +30,6 @@ proofread early drafts and gave helpful comments).
 
 ~2000 words
 
-
 # Overview
 
 I develop a game-theoretic model of electoral contestation in Singapore and
@@ -38,9 +37,9 @@ show that having multi-member GRCs rather than only single-member
 constituencies (SMCs) gives the incumbent party more seats if the incumbent's
 "strong" candidates are significantly stronger than the opposition's ones. 
 
-As this assumption is likely to be true, this suggests that the GRC system
-advantages the PAP and gives it more seats than it would otherwise win under a
-"pure" single-member constituency system like the UK's.
+Given that this assumption is likely to be true, this suggests that the GRC
+system advantages the PAP and gives it more seats than it would otherwise win
+under a "pure" single-member constituency system like the UK's.
 
 # Background
 
@@ -49,8 +48,8 @@ page](https://en.wikipedia.org/wiki/Constituencies_of_Singapore):
 
 > A Group Representation Constituency (GRC) is a type of electoral constituency
 (unique to Singaporean politics. They are multi-member constituencies (usually
-4, 5 or 6 seats) which are contested by candidates by teams of candidates
-**from one party**---or from independents.
+4, 5 or 6 seats) which are contested by teams of candidates **from one party**
+or from independents.
 
 In each GRC, at least one candidate in the slate must be from a minority race
 (ergo non-Chinese). The ostensible purpose of the GRC system is to ensure
@@ -69,21 +68,23 @@ only ever win one seat by himself no matter how great he was.
 The reasoning I've put forth is quite intuitive: strong MPs can "carry" weak
 ones in the GRC system but not the SMC system. But how do we formalise this
 intuition? And how large is this effect, if any? I come up with a toy
-game-theoretic model to answer these questions.
+game-theoretic model to answer these questions. I show not only *that* the GRC
+system gives the PAP an advantage, but also the extent of this advantage---and
+that that this advantage works through magnifying existing advantages that the
+PAP already has.
 
 # Building a game-theoretic model
 
-First some preliminary notes. When modeling it is vitally important to make the
+First a preliminary note. When modeling it is vitally important to make the
 model as simple as possible---and then even simpler than that. Otherwise the
 problem becomes completely intractable. And thus this model leaves out many
-important considerations by necessity. Nonetheless, it should be able to do its
-job of formalising our intuitions.
+important considerations by necessity. 
 
-In any election there are stronger candidates and weaker candidates. For
-simplicity, let us consider two types of candidates: (1) eloquent,
-long-serving, well-respected candidates (minister-calibre candidates) and (2)
-other candidates (perhaps-currently-not-minister-calibre candidates). For
-example in Jurong GRC, one might think that Tharman and Xie Yao Quan would
+With that said: In any election there are stronger candidates and weaker
+candidates. For simplicity, let us consider two types of candidates: (1)
+eloquent, long-serving, well-respected candidates (minister-calibre candidates)
+and (2) other candidates (perhaps-currently-not-minister-calibre candidates).
+For example in Jurong GRC, one might think that Tharman and Xie Yao Quan would
 respectively exemplify the qualities of each category.
 
 Let's now assume that a "weak" candidate has a strength of 0 and a "strong"
@@ -93,18 +94,18 @@ are stronger than the Opposition's candidates. This can be thought of as an
 I am partial to three main explanations for this incumbency bonus:
 
 Firstly, the PAP's political dominance may give it a recruiting advantage (as
-minister-calibre candidates tend not to want to risk their careers).
+minister-calibre candidates may not want to risk their careers on joining
+Opposition).
 
 Secondly, the PAP's political longevity gives it an incumbency advantage. If
 two candidates are identical but one has been a minister for ten years and the
 other an Opposition MP for five, the former will be perceived as stronger by
 the electorate.
 
-The relative friendliness of state media to the PAP's interests can also give
-its candidates an incumbency advantage.
-
-Whichever explanation you prefer, let's say that "strong" PAP candidates have
-strength 2 but "strong" Opposition candidates only 1.
+Lastly, the relative friendliness of state media to the PAP's interests can
+also give its candidates an incumbency advantage. Whichever explanation you
+prefer, let's say that "strong" PAP candidates have strength 2 but "strong"
+Opposition candidates only 1.
 
 Now consider this game.
 
@@ -115,9 +116,7 @@ candidates over all 31 districts such that:
 
 1. in each district, the party that has allocated the higher sum of candidates'
    strength will win all the seats in that district;
-2. neither party knows the composition of strong/weak candidates the opposing
-   party will allocate to each district;
-3. both parties seek to maximise the total number of seats they expect to win.
+2. both parties seek to maximise the total number of seats they expect to win.
 
 (those with a background in game theory may recognise this as a variant of the
 [Blotto game](https://en.wikipedia.org/wiki/Blotto_game)).
@@ -153,16 +152,20 @@ lost to the Opposition.
 Hopefully that clarifies. 
 
 One final point: this game can be played either *simultaneously* or
-*sequentially*. In the simultaneous version of the game (which is what I
-described), both parties choose where to send their MPs at the same time with
-no idea what the other person is doing. In the *sequential* version of the
-game, the PAP first chooses how to field its candidates. Then the Opposition
-observes the PAP's move and then fields its own candidates. The rationale for
-this is that the opposition has *some* idea of which incumbent PAP MPs are in
-which area, and whether they are strong or not. In this exploration I use the
-sequential game as it is i) easier to solve and ii) I suspect that the results
-will be even more skewed in favour of the PAP if the Opposition has no
-last-mover advantage (see Technical Appendix).
+*sequentially*. In the simultaneous version of the game, both parties choose
+where to send their MPs at the same time with no idea what the other party is
+doing. In the *sequential* version of the game, the PAP first chooses how to
+field its candidates. Then the Opposition observes the PAP's move and then
+chooses how to field its candidates. The rationale for this is that the
+opposition has *some* idea of which incumbent PAP MPs are in which area, and
+whether they are strong or not. 
+
+In this exploration I use the sequential game as it is (1) easier to solve and
+(2) I suspect that the results will be even more skewed in favour of the PAP if
+the Opposition has no last-mover advantage (see Technical Appendix). That is to
+say, if we find a PAP advantage when the Opp gets to observe the PAP's actions,
+we should strongly suspect that this advantage will increase when the Opp
+*doesn't* get to observe the PAP's actions.
 
 So that's the game-theoretic model. To reiterate:
 
@@ -227,7 +230,7 @@ landscape (i.e. 31 SMCs). For instance, the top left hand corner shows how many
 seats the PAP would win if it had five strong candidates and the opposition had
 two. The PAP puts its five strong candidates anywhere and the Opp judiciously
 avoids those strong candidates. The end result is that the PAP wins five
-districts, loses districts, and draws the remaining (31-5-2 = 24) districts,
+districts, loses two districts, and draws the remaining (31-5-2 = 24) districts,
 winning a total of (24/2 + 5 = 17) seats out of 31.
 
 The second table shows the number of seats won under a landscape with 6 SMCs
@@ -247,10 +250,10 @@ party has.
 
 # Caveats
 
-My results depend strongly on the *incumbency strength bonus* and the relative
-ratio of strong MPs for each party. Here each strong PAP candidate is worth two
-opposition ones. With a low enough incumbency strength bonus, the last-mover
-advantage the Opposition has can give them the advantage.
+Firstly, my results depend strongly on the *incumbency strength bonus* and the
+relative ratio of strong MPs for each party. Here each strong PAP candidate is
+worth two opposition ones. With a low enough incumbency strength bonus, the
+last-mover advantage the Opposition has can give them the advantage.
 
 ![Figure 2: Robustness check](./img/sens_analysis_2.jpg)
 
@@ -261,10 +264,11 @@ PAP candidates is significantly lower than the number of strong Opposition
 candidates. It's more accurate to think of the GRC system as a
 *"variance-increasing"* system. 
 
-However, I don't think looking at the lower end is that interesting, because (1) it
-seems unlikely that the PAP has significantly fewer strong candidates than the
-opposition, and (2) I strongly suspect that the PAP disadvantage will disappear
-completely in the simultaneous game without the WP's last-mover advantage.
+However, I don't think looking at the lower end is that interesting, because
+(1) it seems unlikely that the PAP has significantly fewer strong candidates
+than the opposition, and (2) I strongly suspect that the PAP disadvantage will
+disappear completely in the simultaneous game without the WP's last-mover
+advantage.
 
 Secondly, the results may be specific to a particular range of strong/weak MPs
 or a particular makeup of SMCs and GRCs. I've tried to ward this
@@ -277,15 +281,15 @@ benefits the PAP. It is only when paired with the assumption of incumbency
 advantage (and a reasonable number of strong v. weak candidates) that the GRC
 system becomes structurally favourable for the PAP. This insight is important,
 because it allows us to infer whether or not the PAP intentionally benefits
-from the GRC system. If it is, then if the Opposition gains in relative size
-and strength, we should expect to observe either a decrease in GRC size or an
-increase in the number of SMCs relative to GRCs in the future.
+from the GRC system. If it is, then we should expect to observe either a
+decrease in GRC size or an increase in the number of SMCs relative to GRCs in
+the future if the Opposition gains in relative size and strength. 
 
 # Conclusion and discussion
 
 Provided that the incumbency strength bonus is high enough, the GRC system
 advantages the PAP by letting it win more seats than it would have under a
-traditional single-member system. We should consider carefully whether the
+traditional single-member system. We should thus carefully consider whether the
 purported benefits to minority representation outweigh the increased
 disproportionality that results. 
 
