@@ -349,6 +349,16 @@ Here would be a good time to either use : Julia path tracer, OR board game frame
 
 ## Summer W4 : 12--18 Jul
 
+### GSoC
+
+On Monday and Tuesday, I successfully implemented contiguity checker and cut
+edges for the state of Iowa.
+
+![Successfully implemented prototype contiguity checker](./img/contiguity.gif)
+![Successfully implemented cut edges checker](./img/cut_edges.gif)
+
+I was also tasked to give a presentation to 
+
 ## Summer W5 : 19--25 Jul
 
 ## Summer W6 : 26 Jul--01 Aug
