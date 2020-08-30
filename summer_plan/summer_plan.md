@@ -357,9 +357,23 @@ edges for the state of Iowa.
 ![Successfully implemented prototype contiguity checker](./img/contiguity.gif)
 ![Successfully implemented cut edges checker](./img/cut_edges.gif)
 
-I was also tasked to give a presentation to 
+I was also tasked to give a presentation to the MGGG group. I gave a
+presentation about the explorable I recently wrote, about a game-theoretic look
+at how the GRC system advantages the PAP under some weak assumptions.
 
 ## Summer W5 : 19--25 Jul
+
+Visit to the Schwartzwald.
+
+First to Freiburg, a university town.
+
+Then visiting... 
+
+Hike ...
+
+Picking redberries and cherries...
+
+
 
 ## Summer W6 : 26 Jul--01 Aug
 
